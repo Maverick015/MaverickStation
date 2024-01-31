@@ -84,6 +84,15 @@ nav {
   text-decoration: none;
 }
 
+#cardContainer{
+  text-align: center;
+}
+
+#cardContainer h2, #cardContainer{
+  margin: 40px 0;
+  text-align: center;
+}
+
 .cards {
   display: flex;
   grid-gap: 15px;
@@ -93,7 +102,6 @@ nav {
 }
 
 .cardWhite {
-  flex-basis: auto;
   width: 250px;
   background: white;
   box-shadow: 0 0 16px rgba(0, 0, 0,0.1);
@@ -113,9 +121,18 @@ nav {
   border-radius: 5px;
 }
 
-#cardContainer{
-  text-align: center;
-  padding-bottom: 40px;
+button.discover a{
+  text-decoration: none;
+  color: white;
+  font-size: 16px;
+}
+
+button.discover {
+  background-color: rgb(31, 41, 55);
+  border: 1.5px solid black;
+  border-radius: 5px;
+  padding: 5px 15px;
+
 }
 
 #aboutMe{
@@ -176,10 +193,15 @@ nav {
 
 .contactTitle {
   font-size:  20px;
+  font-weight: bold;
 }
 
 .contactInfo {
   padding-top: 10px;
+}
+
+li.contactInfo a{
+  color: white;
 }
 
 .socials {
