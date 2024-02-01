@@ -25,7 +25,9 @@ p {
 }
 
 #logo {
-  width: 300px;
+  min-width: 0;
+  width: 100%;
+  max-width: 300px;
   height: auto;
 }
 
@@ -50,6 +52,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  text-align: center;
+  min-width: 0;
 }
 
 .listMenu a {
@@ -95,28 +100,30 @@ nav {
 
 .cards {
   display: flex;
-  grid-gap: 15px;
   margin: 20px 0px;
   justify-content: center;
   flex-wrap: wrap;
 }
 
 .cardWhite {
-  width: 250px;
+  align-items: center;
+  max-width: 250px;
   background: white;
   box-shadow: 0 0 16px rgba(0, 0, 0,0.1);
   text-align: center;
   border-radius: 5px;
   padding: 25px;
+  margin: 0 20px;
 }
 
 .cardWhite p {
-    font-size: 20px;
-    color: gray;
+  height: 75px;
+  font-size: 20px;
+  color: gray;
 }
 
 .cardWhite img {
-  width: auto;
+  max-width: 250px;
   height: 200px;
   border-radius: 5px;
 }
@@ -132,11 +139,9 @@ button.discover {
   border: 1.5px solid black;
   border-radius: 5px;
   padding: 5px 15px;
-
 }
 
 #aboutMe{
-
   gap: 25px;
   background-color: rgb(31, 41, 55);
   color: white;
@@ -167,14 +172,16 @@ button.discover {
   border: 1px solid white;
   border-radius: 10px;
   width: 750px;
-  margin: 0 10px;
+  margin: 0 20px;
 }
 
-.personImage {
+.personDescImg .personImage {
   display: flex;
-  width: 460px;
+  min-width: 0;
+  max-width: 450px;
   height:auto;
   border-radius: 10px;
+  margin: 0 20px;
 }
 
 #footer {
@@ -182,7 +189,6 @@ button.discover {
   padding: 0px 40px 10px 40px ;
   text-align: center;
   color: white;
-
 }
 
 .contactList {
