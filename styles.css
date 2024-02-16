@@ -40,6 +40,8 @@ header {
   justify-content: center;
   background-color: rgb(233, 233, 233);
   padding: 15px 0;
+  position: sticky;
+  top: 0;
 }
 
 .logoTitle {
