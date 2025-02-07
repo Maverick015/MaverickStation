@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Temporary - Projects</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="googlebot" content="noindex, nofollow">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="otherstyles.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header id="mainHeader">
@@ -27,9 +28,8 @@
 
     <!-- Sidebar/menu -->
     <nav class="sidebar collapse white animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
-        <div class="container">
-            <a href="#" onclick="close()" class="hide-large right jumbo padding hover-grey"
-                title="close menu">
+        <div class="sidebar-container">
+            <a href="#" onclick="ms_close()" class="hide-large right jumbo padding hover-grey" title="close menu">
                 <i class="fa fa-remove"></i>
             </a>
             <div id="aboutMe">
@@ -41,26 +41,27 @@
             </div>
             <h4><b>PORTFOLIO</b></h4>
         </div>
+
         <div class="bar-block">
-            <a href="#portfolio" onclick="close()" class="bar-item button padding text-teal"><i
+            <a href="#portfolio" onclick="ms_close()" class="bar-item button padding text-teal"><i
                     class="fa fa-th-large fa-fw margin-right"></i>PORTFOLIO</a>
-            <a href="#footer" onclick="close()" class="bar-item button padding"><i
+            <a href="#footer" onclick="ms_close()" class="bar-item button padding"><i
                     class="fa fa-user fa-fw margin-right"></i>ABOUT</a>
         </div>
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
-    <div class="overlay hide-large animate-opacity" onclick="close()" style="cursor:pointer"
-        title="close side menu" id="myOverlay"></div>
+    <div class="overlay hide-large animate-opacity" onclick="ms_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay">
+    </div>
 
     <!-- !PAGE CONTENT! -->
     <div class="main" style="margin-left:300px">
 
         <!-- Header -->
         <header id="portfolio">
-            <a href="#"><img src="" style="width:65px;"
-                    class="circle right margin hide-large hover-opacity"></a>
-            <span class="button hide-large xxlarge hover-text-grey" onclick="open()"><i
+            <a href="#"><img src="" style="width:65px;" class="circle right margin hide-large hover-opacity"></a>
+            <span class="button hide-large xxlarge hover-text-grey" onclick="ms_open()"><i
                     class="fa fa-bars"></i></span>
             <div class="container">
                 <h1><b>My Portfolio</b></h1>
@@ -68,64 +69,64 @@
                     <span class="margin-right">Filter:</span>
                     <button class="button black">ALL</button>
                     <button class="button white"><i class="fa fa-diamond margin-right"></i>Professional</button>
-                    <button class="button white hide-small"><i
-                            class="fa fa-photo margin-right"></i>Personal</button>
-                    <button class="button white hide-small"><i
-                            class="fa fa-map-pin margin-right"></i>Under Progress</button>
-                    <button class="button white hide-small"><i
-                        class="fa fa-map-pin margin-right"></i>Completed</button>
+                    <button class="button white hide-small"><i class="fa fa-photo margin-right"></i>Personal</button>
+                    <button class="button white hide-small"><i class="fa fa-map-pin margin-right"></i>Under
+                        Progress</button>
+                    <button class="button white hide-small"><i class="fa fa-map-pin margin-right"></i>Completed</button>
                 </div>
             </div>
         </header>
 
         <!-- First Projects Grid-->
         <div class="row-padding">
-            <div class="third container margin-bottom">
-                <img src="images/zendesk.png" alt="Zendesk Integration" style="width:100%" class="hover-opacity">
+            <div class="third card container margin-bottom">
+                <img src="images/zendesk.png" alt="Zendesk Integration" style="width:100%" class="card-image">
                 <div class="container white">
                     <p><b>Zendesk Integration</b></p>
-                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                        ultricies congue gravida diam non fringilla.</p>
+                    <p>Complete Zendesk CRM integration: from research & contract signing to technical implementation,
+                        chatbot creation, and staff training.</p>
                 </div>
             </div>
-            <div class="third container margin-bottom">
-                <img src="" alt="Norway" style="width:100%" class="hover-opacity">
+            <div class="third card container margin-bottom">
+                <img src="images/microsoft-AI-Builder-icon.png" alt="AI-Builder" style="width:100%" class="card-image">
                 <div class="container white">
-                    <p><b>Lorem Ipsum</b></p>
-                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                        ultricies congue gravida diam non fringilla.</p>
+                    <p><b>AI Data Extraction</b></p>
+                    <p>I developed and trained an AI Builder model to automate data extraction from invoices within
+                        Power Automate. The model accurately identified and extracted key details, reducing manual data
+                        entry and enabling more precise data collection.</p>
                 </div>
             </div>
-            <div class="third container">
-                <img src="" alt="Norway" style="width:100%" class="hover-opacity">
+            <div class="third card container">
+                <img src="images/logo-didomi-1.png" alt="Didomi's CMP" style="width:100%" class="card-image">
                 <div class="container white">
-                    <p><b>Lorem Ipsum</b></p>
-                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                        ultricies congue gravida diam non fringilla.</p>
+                    <p><b>CMP Integration</b></p>
+                    <p>Integration of Didomi's CMP to ensure compliance to Bill 25, configured consent banners,
+                        streamlined user preference management, and optimized data collection processes to align with
+                        legal requirements.</p>
                 </div>
             </div>
         </div>
 
         <!-- Second Projects Grid-->
         <div class="row-padding">
-            <div class="third container margin-bottom">
-                <img src="" alt="Norway" style="width:100%" class="hover-opacity">
+            <div class="third card container margin-bottom">
+                <img src="images/monday-dot-com.png" alt="Monday.com Integration" style="width:100%" class="card-image">
                 <div class="container white">
-                    <p><b>Lorem Ipsum</b></p>
+                    <p><b>Monday.com Platform Integration</b></p>
+                    <p>Integrated Monday.com to streamline workflows, automating task management and enhancing team
+                        collaboration for improved efficiency.</p>
+                </div>
+            </div>
+            <div class="third card container margin-bottom">
+                <img src="" alt="Delivery Tarifs Analysis" style="width:100%" class="card-image">
+                <div class="container white">
+                    <p><b>Delivery Tarifs Analysis</b></p>
                     <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
                         ultricies congue gravida diam non fringilla.</p>
                 </div>
             </div>
-            <div class="third container margin-bottom">
-                <img src="" alt="Norway" style="width:100%" class="hover-opacity">
-                <div class="container white">
-                    <p><b>Lorem Ipsum</b></p>
-                    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
-                        ultricies congue gravida diam non fringilla.</p>
-                </div>
-            </div>
-            <div class="third container">
-                <img src="" alt="Norway" style="width:100%" class="hover-opacity">
+            <div class="third card container">
+                <img src="" alt="Soon soon ^^" style="width:100%" class="card-image">
                 <div class="container white">
                     <p><b>Lorem Ipsum</b></p>
                     <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae,
@@ -139,12 +140,15 @@
                 <ul class="contactList">
                     <li class="contactTitle">Contact information</li>
                     <li class="contactInfo"><a href="tel:+1579-488-3709">579 488-3709</a></li>
-                    <li class="contactInfo"><a href="mailto:maverick.lussier@hotmail.com">Maverick.Lussier@hotmail.com</a></li>
+                    <li class="contactInfo"><a
+                            href="mailto:maverick.lussier@hotmail.com">Maverick.Lussier@hotmail.com</a></li>
                 </ul>
-            <div class="socials">
-                <a href="https://www.linkedin.com/in/maverick-lussier-965498231/" target="_blank"><img src="images/LinkedIn.png" alt="LinkedIn profile"></a>
-                <a href="https://github.com/Maverick015" target="_blank"><img src="images/github.png" alt="GitHub profile"></a>
-            </div>
+                <div class="socials">
+                    <a href="https://www.linkedin.com/in/maverick-lussier-965498231/" target="_blank"><img
+                            src="images/LinkedIn.png" alt="LinkedIn profile"></a>
+                    <a href="https://github.com/Maverick015" target="_blank"><img src="images/github.png"
+                            alt="GitHub profile"></a>
+                </div>
             </div>
             <div class="copyright">Copyright @ MaverickStation.ca 2024</div>
         </footer>
@@ -154,12 +158,12 @@
 
     <script>
         // Script to open and close sidebar
-        function open() {
+        function ms_open() {
             document.getElementById("mySidebar").style.display = "block";
             document.getElementById("myOverlay").style.display = "block";
         }
 
-        function close() {
+        function ms_close() {
             document.getElementById("mySidebar").style.display = "none";
             document.getElementById("myOverlay").style.display = "none";
         }
