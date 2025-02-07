@@ -28,6 +28,8 @@ p {
     font-size: 25px;
 }
 
+/* Main Header */
+
 #logo {
   min-width: 0;
   width: 100%;
@@ -41,7 +43,7 @@ p {
   gap: 20px;
   align-items: center;
   justify-content: center;
-  background-color: rgb(233, 233, 233);
+  background-color: #f1f1f1;
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -73,79 +75,10 @@ p {
 nav {
   display: flex;
   align-items: right;
-  background-color: rgb(233, 233, 233);
+  background-color: inherit;
 }
 
-#banner {
-  background-image: url(images/background.png);
-  background-size: cover;
-  background-position: center;
-  padding: 175px 0;
-  text-align: center;
-}
-
-#banner p {
-  margin-bottom: 40px;
-}
-
-#btnBlue{
-  padding: 10px 15px;
-  border-radius: 5px;
-  background: rgb(32, 32, 167);
-  color: white;
-  text-decoration: none;
-}
-
-#cardContainer{
-  text-align: center;
-}
-
-#cardContainer h2, #cardContainer{
-  margin: 40px 0;
-  text-align: center;
-}
-
-.cards {
-  display: flex;
-  margin: 20px 0px;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 25px;  
-}
-
-.cardWhite {
-  max-width: 250px;
-  background: white;
-  box-shadow: 0 0 16px rgba(0, 0, 0,0.1);
-  text-align: center;
-  border-radius: 5px;
-  padding: 25px;
-}
-
-.cardWhite p {
-  height: 75px;
-  font-size: 20px;
-  color: gray;
-}
-
-.cardWhite img {
-  max-width: 250px;
-  height: 200px;
-  border-radius: 5px;
-}
-
-button.discover a{
-  text-decoration: none;
-  color: white;
-  font-size: 16px;
-}
-
-button.discover {
-  background-color: rgb(31, 41, 55);
-  border: 1.5px solid black;
-  border-radius: 5px;
-  padding: 5px 15px;
-}
+/* About Me */
 
 .aboutMeContainer {
   display: flex;
@@ -161,15 +94,6 @@ button.discover {
   gap: 25px;
 }
 
-.personDesc {
-  display: flex;
-  padding: 20px;
-  border: 1px solid white;
-  border-radius: 10px;
-  width: 750px;
-  margin: 0 20px;
-}
-
 .personDescImg .personImage {
   display: flex;
   min-width: 0;
@@ -179,9 +103,11 @@ button.discover {
   margin: 0 20px;
 }
 
+/* Footer */
+
 #footer {
   background: rgb(31, 41, 55);
-  padding: 0px 40px 10px 40px ;
+  padding: 40px 40px 10px 40px ;
   text-align: center;
   color: white;
 }
