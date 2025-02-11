@@ -1,4 +1,4 @@
-html{box-sizing:border-box}*,*:before,*:after{box-sizing:inherit}
+*:before,*:after{box-sizing:inherit}
 html{-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}
 article,aside,details,figcaption,figure,footer,header,main,menu,nav,section{display:block}summary{display:list-item}
 
@@ -32,7 +32,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .dropdown-hover:first-child,.dropdown-click:hover{background-color:#ccc;color:#000}
 .dropdown-hover:hover > .button:first-child,.dropdown-click:hover > .button:first-child{background-color:#ccc;color:#000}
 .dropdown-content{cursor:auto;color:#000;background-color:#fff;display:none;position:absolute;min-width:160px;margin:0;padding:0;z-index:1}
-.check,.radio{width:24px;height:24px;position:relative;top:6px}
 
 .bar-block .dropdown-hover,.bar-block .dropdown-click{width:100%}
 .bar-block .dropdown-hover .dropdown-content,.bar-block .dropdown-click .dropdown-content{min-width:100%}
@@ -83,10 +82,6 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 .display-position{position:absolute}
 .circle{border-radius:50%}
 .round-small{border-radius:2px}.round,.round-medium{border-radius:4px}.round-large{border-radius:8px}.round-xlarge{border-radius:16px}.round-xxlarge{border-radius:32px}
-.row-padding,.row-padding>.half,.row-padding>.third,.row-padding>.twothird,.row-padding>.threequarter,.row-padding>.quarter,.row-padding>.col{padding:0 8px}
-.code,.codespan{font-family:Consolas,"courier new";font-size:16px}
-.code{width:auto;background-color:#fff;padding:8px 12px;border-left:4px solid #4CAF50;word-wrap:break-word}
-.codespan{color:crimson;background-color:#f1f1f1;padding-left:4px;padding-right:4px;font-size:110%}
 
 /* Sidebar */
 
@@ -98,40 +93,54 @@ hr{border:0;border-top:1px solid #eee;margin:20px 0}
 
 /* Project Cards */
 
-.container:after,.container:before,.panel:after,.panel:before,.row:after,.row:before,.row-padding:after,.row-padding:before,.cell-row:before,.cell-row:after,.clear:after,.clear:before,.bar:before,.bar:after{content:"";display:table;clear:both}
-
-/* Container Tests
+.row:after,.row:before,.row-padding:after,.cell-row:before,.cell-row:after,.clear:after,.clear:before{content:"";display:table;clear:both}
 
 
-.container, .panel, .row, .row-padding, .cell-row, .clear, .bar {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: space-between;
-    box-sizing: border-box;
-    width: 100%;
+#cardContainer h2, #cardContainer{
+margin: 40px 0;
+text-align: center;
 }
 
- */
-
-.row-padding{
-margin-bottom: 20px;
+.cards {
+display: flex;
+margin: 20px 0px;
+justify-content: center;
+flex-wrap: wrap;
+gap: 25px;  
 }
 
-.container.white{
-    height: 100%;
-    margin-bottom: 20px;
+.cardWhite {
+max-width: 250px;
+background: white;
+box-shadow: 0 0 16px rgba(0, 0, 0,0.1);
+text-align: center;
+border-radius: 5px;
+padding: 25px;
 }
 
-.third.card.container{
-height: inherit;
+.cardWhite p {
+height: 250px;
+font-size: 20px;
+color: gray;
 }
 
-.card-image{
-margin-bottom: 15px;
+.cardWhite img {
+max-width: 250px;
 height: 150px;
-max-width: fit-content;
-max-height: fit-content;
+border-radius: 5px;
+}
+
+button.discover a{
+text-decoration: none;
+color: white;
+font-size: 16px;
+}
+
+button.discover {
+background-color: rgb(31, 41, 55);
+border: 1.5px solid black;
+border-radius: 5px;
+padding: 5px 15px;
 }
 
 .container,.panel{padding:0.01em 16px;text-align: center;}.panel{margin-top:16px;margin-bottom:16px}
