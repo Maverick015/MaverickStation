@@ -29,7 +29,7 @@ nav {display: flex;align-items: right;background-color: rgb(233, 233, 233);}
 
 /* Main Banner */
 
-#banner {background-image: url(../images/background.png);background-size: cover;background-position: center;padding: 175px 0;text-align: center;}
+#banner {background-image: url(images/background.png);background-size: cover;background-position: center;padding: 175px 0;text-align: center;}
 
 #banner p {margin-bottom: 40px;}
 
