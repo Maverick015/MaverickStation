@@ -61,13 +61,11 @@ p{color: 404042;font-size: 18px;}
 .listMenu a {font-size: 18px;padding: 15px;text-decoration: none; color: gray;}
 nav {display: flex;align-items: right;background-color: inherit;}
 
-@media (min-width:993px){#mainHeader{display: flex;flex-wrap: wrap;gap: 20px;align-items: center;background-color: #f1f1f1;margin-left:2px;padding:15px 0;position: sticky;top: 0;}}
-@media (max-width:992.99px){#mainHeader{display: flex;flex-wrap: wrap;gap: 20px;align-items: center;justify-content:center;background-color: #f1f1f1;padding:15px 0;position: sticky;top: 0;}}
-
-/* My Porfolio Header */
+@media (min-width:993px){.mainHeader{display: flex;flex-wrap: wrap;gap: 20px;align-items: center;background-color: #f1f1f1;padding:15px 0px 15px 10px;position: sticky;top: 0;}}
+@media (max-width:992.99px){.mainHeader{display: flex;flex-wrap: wrap;gap: 20px;align-items: center;justify-content:center;background-color: #f1f1f1;padding:15px 0;position: sticky;top: 0;}}
 
 
-/* Project Cards */
+/* Portfolio */
 
 .container{padding:0.01em 16px;text-align: center;}
 #cardContainer h2, #cardContainer{margin: 40px 0;text-align: center;}
