@@ -1,29 +1,27 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Temporary - Projects</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="googlebot" content="noindex, nofollow">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="projects.css">
-    <link rel="stylesheet" href="otherstyles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <header id="mainHeader">
     <div class="logoTitle">
-        <a href="https://maverickstation.ca/"><img id="logo" src="images/newlogo.png" alt="Maverick Lussier"></a>
+        <a href="https://maverickstation.ca/"><img id="logo" src="../images/newlogo.png" alt="Maverick Lussier"></a>
     </div>
     <nav class="listMenu">
         <a href="/index.html">Home</a>
         <a href="/projects/projects.html">Projects</a>
+        <a href="">About me</a>
         <a href="#footer">Contact</a>
     </nav>
 </header>
-
-<body class="light-grey content" style="max-width:1600px">
+<body class="light-grey">
 
     <!-- Sidebar/menu -->
     <nav class="sidebar collapse white animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
@@ -34,15 +32,16 @@
             <div id="aboutMe">
                 <div class="aboutMeContainer">
                     <div class="personDescImg">
-                        <img class="personImage" src="/images/MaverickLussier.jpg" alt="Maverick Lussier">
+                        <img class="personImage" src="../images/MaverickLussier.jpg" alt="Maverick Lussier">
                     </div>
                 </div>
             </div>
-            <h4><b>PORTFOLIO</b></h4>
-        </div>
+            <h4><b>Maverick Lussier</b></h4>
+            <p>Thank you for checking out my past, and current, projects!
+            </div>
 
         <div class="bar-block">
-            <a href="#portfolio" onclick="ms_close()" class="bar-item button padding text-teal"><i
+            <a href="#portfolioHeader" onclick="ms_close()" class="bar-item button padding text-teal"><i
                     class="fa fa-th-large fa-fw margin-right"></i>PORTFOLIO</a>
             <a href="#footer" onclick="ms_close()" class="bar-item button padding"><i
                     class="fa fa-user fa-fw margin-right"></i>ABOUT</a>
@@ -50,27 +49,26 @@
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
+
     <div class="overlay hide-large animate-opacity" onclick="ms_close()" style="cursor:pointer" title="close side menu"
         id="myOverlay">
     </div>
 
     <!-- !PAGE CONTENT! -->
-    <div class="main" style="margin-left:300px">
+    <div class="main">
 
         <!-- Header -->
-        <header id="portfolio">
+        <header id="portfolioHeader">
             <a href="#"><img src="" style="width:65px;" class="circle right margin hide-large hover-opacity"></a>
             <span class="button hide-large xxlarge hover-text-grey" onclick="ms_open()"><i
                     class="fa fa-bars"></i></span>
             <div class="container">
-                <h1><b>My Portfolio</b></h1>
+                <h1 class="portfolioTitle"><b>My Portfolio</b></h1>
                 <div class="section bottombar padding-16">
-                    <span class="margin-right">Filter:</span>
-                    <button class="button black">ALL</button>
-                    <button class="button white"><i class="fa fa-diamond margin-right"></i>Professional</button>
-                    <button class="button white hide-small"><i class="fa fa-photo margin-right"></i>Personal</button>
-                    <button class="button white hide-small"><i class="fa fa-map-pin margin-right"></i>Under
-                        Progress</button>
+                    <button class="filter button black">ALL</button>
+                    <button class="filter button white"><i class="fa fa-diamond margin-right"></i>Professional</button>
+                    <button class="filter button white hide-small"><i class="fa fa-photo margin-right"></i>Personal</button>
+                    <button class="filter button white hide-small"><i class="fa fa-map-pin margin-right"></i>Under Progress</button>
                     <button class="button white hide-small"><i class="fa fa-map-pin margin-right"></i>Completed</button>
                 </div>
             </div>
@@ -81,70 +79,70 @@
         <div id="cardContainer">
             <div class="cards">
                 <div class="cardWhite" id="Professional">
-                    <img src="images/zendesk.png" alt="Zendesk Integration">
+                    <img src="../images/zendesk.png" alt="Zendesk Integration">
                     <h3>Zendesk Integration</h3>
                     <p>Led the end-to-end Zendesk CRM integration, from research and contract negotiation to technical 
                         implementation, chatbot development, flow diagramming, and staff training.</p>
                 </div>
                 <div class="cardWhite" id="Professional">
-                    <img src="images/microsoft-AI-Builder-icon.png" alt="AI-Builder">
+                    <img src="../images/microsoft-AI-Builder-icon.png" alt="AI-Builder">
                     <h3>AI Data Extraction Model</h3>
                     <p>Trained an AI model to automate data extraction from invoices within Power Automate. The model accurately identified and extracted key details, reducing manual data
                         entry and enabling more precise data collection.</p>
                 </div>
                 <div class="cardWhite" id="Professional">
-                    <img src="images/logo-didomi-1.png" alt="Didomi's CMP">
+                    <img src="../images/logo-didomi-1.png" alt="Didomi's CMP">
                     <h3>Consent Management Platform Integration</h3>
                     <p>Integration of Didomi's CMP to ensure compliance to Bill 25, configured consent banners,
                         streamlined user preference management, and optimized data collection processes to align with
                         legal requirements.</p>
                 </div>
                 <div class="cardWhite" id="Professional">
-                    <img src="images/monday-dot-com.png" alt="Monday.com Integration">
+                    <img src="../images/monday-dot-com.png" alt="Monday.com Integration">
                     <h3>Monday.com Platform Integration</h3>
                     <p>Integrated Monday.com to streamline workflows, automating task management and enhancing team
                         collaboration for improved efficiency.</p>
                 </div>
                 <div class="cardWhite" id="Professional">
-                    <img src="/images/delivery.png" alt="Delivery Analysis & Overhaul">
+                    <img src="../images/delivery.png" alt="Delivery Analysis & Overhaul">
                     <h3>Delivery Analysis & Overhaul</h3>
                     <p>Analyzed and overhauled delivery tariffs at Avril, on Magento 2.0, optimizing pricing strategies to balance profitability and fair consumer costs, leading to a 20% increase in profitability.</p>
                 </div>
                 <div class="cardWhite" id="Personal">
-                    <img src="images/Pong_game.png" alt="Laser Pong game">
+                    <img src="../images/Pong_game.png" alt="Laser Pong game">
                     <h3>Laser Pong Game</h3>
                     <p>A surprisingly complex little game! I'll make it even more challenging in due time...</p>
                     <button class="discover"><a href="https://github.com/Maverick015/laser-pong-game" target="_blank">Discover</a></button>
                 </div>
                 <div class="cardWhite" id="Personal">
-                    <img src="images/chroniques.png" alt="A mysterious QR Code">
+                    <img src="../images/chroniques.png" alt="A mysterious QR Code">
                     <h3>QR Code Generator</h3>
                     <p>Very simplistic QR Code Generator made with Python.</p>
                     <button class="discover"><a href="https://github.com/Maverick015/qr_code_generator" target="_blank">Discover</a></button>
                 </div>
                 <div class="cardWhite" id="Personal">
-                    <img src="images/logo.jpg" alt="What an amazing Website eh?">
+                    <img src="../images/logo.jpg" alt="What an amazing Website eh?">
                     <h3>MaverickStation.ca</h3>
                     <p>My very own portfolio, which also happens to be a Website. How wonderful!</p>
                     <button class="discover"><a href="https://maverickstation.ca/">Already here! </a></button>
                 </div>
                 <div class="cardWhite" id="Personal">
-                    <img src="images/map.png" alt="A map's adventure">
+                    <img src="../images/map.png" alt="A map's adventure">
                     <h3>A map's adventure</h3>
                     <p>The only thing I can say for now, is "It's a browser based game".</p>
                 </div>
                 <div class="cardWhite" id="Personal">
-                    <img src="images/brainidea.png" alt="Idea lightbulb">
+                    <img src="../images/brainidea.png" alt="Idea lightbulb">
                     <h3>Anti-Fraud Zapier Automation</h3>
                     <p></p>
                 </div>
                 <div class="cardWhite" id="Personal">
-                    <img src="images/brainidea.png" alt="Idea lightbulb">
+                    <img src="../images/brainidea.png" alt="Idea lightbulb">
                     <h3>WIP</h3>
                     <p>It's a secret... but it has to do with the Quebec governement.</p>
                 </div>
                 <div class="cardWhite" id="Personal">
-                    <img src="images/brainidea.png" alt="Idea lightbulb">
+                    <img src="../images/brainidea.png" alt="Idea lightbulb">
                     <h3>WIP</h3>
                     <p>It's a secret... but it has to do with the Quebec governement.</p>
                 </div>
@@ -161,8 +159,8 @@
                 </ul>
                 <div class="socials">
                     <a href="https://www.linkedin.com/in/maverick-lussier-965498231/" target="_blank"><img
-                            src="images/LinkedIn.png" alt="LinkedIn profile"></a>
-                    <a href="https://github.com/Maverick015" target="_blank"><img src="images/github.png"
+                            src="../images/LinkedIn.png" alt="LinkedIn profile"></a>
+                    <a href="https://github.com/Maverick015" target="_blank"><img src="../images/github.png"
                             alt="GitHub profile"></a>
                 </div>
             </div>
