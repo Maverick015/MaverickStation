@@ -9,6 +9,7 @@
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="projects.js"></script>
 </head>
 <header class="mainHeader">
     <div class="logoTitle">
@@ -16,7 +17,7 @@
     </div>
     <nav class="listMenu">
         <a href="https://maverickstation.ca/">Home</a>
-        <a href="/projects">Projects</a>
+        <a href="https://maverickstation.ca/projects">Projects</a>
         <a href="/about">About me</a>
         <a href="#footer">Contact</a>
     </nav>
@@ -25,9 +26,9 @@
 
     <!-- Sidebar/menu -->
 
-    <nav class="sidebar collapse white animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+    <nav class="sidebar collapse white" style="z-index:3;width:300px;" id="mySidebar"><br>
         <div class="sidebar-container">
-            <a href="#" onclick="ms_close()" class="hide-large right jumbo padding hover-grey" title="close menu">
+            <a href="#" onclick="ms_close()" class="hide-large right xxxlarge hover-grey" title="close menu">
                 <i class="fa fa-remove"></i>
             </a>
             <div id="aboutMe">
@@ -40,7 +41,6 @@
             <h4><b>Maverick Lussier</b></h4>
             <p>Thank you for checking out my past, and current, projects!
             </div>
-
         <div class="bar-block">
             <a href="#portfolioHeader" onclick="ms_close()" class="bar-item button padding text-teal"><i
                     class="fa fa-th-large fa-fw margin-right"></i>PORTFOLIO</a>
@@ -51,8 +51,7 @@
 
     <!-- Overlay effect when opening sidebar on small screens -->
 
-    <div class="overlay hide-large animate-opacity" onclick="ms_close()" style="cursor:pointer" title="close side menu"
-        id="myOverlay">
+    <div class="overlay hide-large animate-opacity" onclick="ms_close()" style="cursor:pointer" title="close side menu" id="myOverlay">
     </div>
 
     <!-- !PAGE CONTENT! -->
@@ -66,11 +65,13 @@
             <div class="container">
                 <h1 class="portfolioTitle"><b>My Portfolio</b></h1>
                 <div class="section bottombar padding-16">
-                    <button class="filter button black">ALL</button>
-                    <button class="filter button white"><i class="fa fa-diamond margin-right"></i>Professional</button>
-                    <button class="filter button white hide-small"><i class="fa fa-photo margin-right"></i>Personal</button>
-                    <button class="filter button white hide-small"><i class="fa fa-map-pin margin-right"></i>Under Progress</button>
-                    <button class="button white hide-small"><i class="fa fa-map-pin margin-right"></i>Completed</button>
+                    <div id="buttonSection">
+                        <button class="filterButton active white" onclick="filterSelection('ALL')">ALL</button>
+                        <button class="filterButton white" onclick="filterSelection('Professional')"><i class="fa fa-diamond margin-right"></i>Professional</button>
+                        <button class="filterButton white" onclick="filterSelection('Personal')"><i class="fa fa-photo margin-right"></i>Personal</button>
+                        <button class="filterButton white" onclick="filterSelection('Under Progress')"><i class="fa fa-map-pin margin-right"></i>Under Progress</button>
+                        <button class="filterButton white" onclick="filterSelection('Completed')"><i class="fa fa-map-pin margin-right"></i>Completed</button>
+                    </div>
                 </div>
             </div>
         </header>
@@ -79,70 +80,70 @@
 
         <div id="cardContainer">
             <div class="cards">
-                <div class="cardWhite" id="Professional">
+                <div class="cardWhite cardFilter" id="Professional">
                     <img src="../images/zendesk.png" alt="Zendesk Integration">
                     <h3>Zendesk Integration</h3>
                     <p>Led the end-to-end Zendesk CRM integration, from research and contract negotiation to technical 
                         implementation, chatbot development, flow diagramming, and staff training.</p>
                 </div>
-                <div class="cardWhite" id="Professional">
+                <div class="cardWhite cardFilter" id="Professional">
                     <img src="../images/microsoft-AI-Builder-icon.png" alt="AI-Builder">
                     <h3>AI Data Extraction Model</h3>
                     <p>Trained an AI model to automate data extraction from invoices within Power Automate. The model accurately identified and extracted key details, reducing manual data
                         entry and enabling more precise data collection.</p>
                 </div>
-                <div class="cardWhite" id="Professional">
+                <div class="cardWhite cardFilter" id="Professional">
                     <img src="../images/logo-didomi-1.png" alt="Didomi's CMP">
                     <h3>Consent Management Platform Integration</h3>
                     <p>Integration of Didomi's CMP to ensure compliance to Bill 25, configured consent banners,
                         streamlined user preference management, and optimized data collection processes to align with
                         legal requirements.</p>
                 </div>
-                <div class="cardWhite" id="Professional">
+                <div class="cardWhite cardFilter" id="Professional">
                     <img src="../images/monday-dot-com.png" alt="Monday.com Integration">
                     <h3>Monday.com Platform Integration</h3>
                     <p>Integrated Monday.com to streamline workflows, automating task management and enhancing team
                         collaboration for improved efficiency.</p>
                 </div>
-                <div class="cardWhite" id="Professional">
+                <div class="cardWhite cardFilter" id="Professional">
                     <img src="../images/delivery.png" alt="Delivery Analysis & Overhaul">
                     <h3>Delivery Analysis & Overhaul</h3>
                     <p>Analyzed and overhauled delivery tariffs at Avril, on Magento 2.0, optimizing pricing strategies to balance profitability and fair consumer costs, leading to a 20% increase in profitability.</p>
                 </div>
-                <div class="cardWhite" id="Personal">
+                <div class="cardWhite cardFilter" id="Personal">
                     <img src="../images/Pong_game.png" alt="Laser Pong game">
                     <h3>Laser Pong Game</h3>
                     <p>A surprisingly complex little game! I'll make it even more challenging in due time...</p>
                     <button class="discover"><a href="https://github.com/Maverick015/laser-pong-game" target="_blank">Discover</a></button>
                 </div>
-                <div class="cardWhite" id="Personal">
+                <div class="cardWhite cardFilter" id="Personal">
                     <img src="../images/chroniques.png" alt="A mysterious QR Code">
                     <h3>QR Code Generator</h3>
                     <p>Very simplistic QR Code Generator made with Python.</p>
                     <button class="discover"><a href="https://github.com/Maverick015/qr_code_generator" target="_blank">Discover</a></button>
                 </div>
-                <div class="cardWhite" id="Personal">
+                <div class="cardWhite cardFilter" id="Personal">
                     <img src="../images/logo.jpg" alt="What an amazing Website eh?">
                     <h3>MaverickStation.ca</h3>
                     <p>My very own portfolio, which also happens to be a Website. How wonderful!</p>
                     <button class="discover"><a href="https://maverickstation.ca/">Already here! </a></button>
                 </div>
-                <div class="cardWhite" id="Personal">
+                <div class="cardWhite cardFilter" id="Personal">
                     <img src="../images/map.png" alt="A map's adventure">
                     <h3>A map's adventure</h3>
                     <p>The only thing I can say for now, is "It's a browser based game".</p>
                 </div>
-                <div class="cardWhite" id="Personal">
+                <div class="cardWhite cardFilter" id="Personal">
                     <img src="../images/brainidea.png" alt="Idea lightbulb">
                     <h3>Anti-Fraud Zapier Automation</h3>
                     <p></p>
-                </div>
-                <div class="cardWhite" id="Personal">
+                </div> 
+                <div class="cardWhite cardFilter" id="Personal">
                     <img src="../images/brainidea.png" alt="Idea lightbulb">
                     <h3>WIP</h3>
                     <p>It's a secret... but it has to do with the Quebec governement.</p>
                 </div>
-                <div class="cardWhite" id="Personal">
+                <div class="cardWhite cardFilter" id="Personal">
                     <img src="../images/brainidea.png" alt="Idea lightbulb">
                     <h3>WIP</h3>
                     <p>It's a secret... but it has to do with the Quebec governement.</p>
@@ -164,26 +165,11 @@
                     <a href="https://github.com/Maverick015" target="_blank"><img src="../images/github.png"
                             alt="GitHub profile"></a>
                 </div>
+                <div class="copyright">Copyright @ MaverickStation.ca 2024</div>
             </div>
-            <div class="copyright">Copyright @ MaverickStation.ca 2024</div>
         </footer>
 
         <!-- End page content -->
     </div>
-
-    <script>
-        // Script to open and close sidebar
-        function ms_open() {
-            document.getElementById("mySidebar").style.display = "block";
-            document.getElementById("myOverlay").style.display = "block";
-        }
-
-        function ms_close() {
-            document.getElementById("mySidebar").style.display = "none";
-            document.getElementById("myOverlay").style.display = "none";
-        }
-    </script>
-
 </body>
-
 </html>
