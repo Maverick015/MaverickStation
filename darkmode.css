@@ -1,0 +1,60 @@
+/* Colors */
+:root {
+--dm-bg: #22203A !important; /* Dark Mode Background */
+--dm-surface: #2E2B50 !important; /* Surface Elements (cards, containers) */
+--dm-text-primary: #EDEDF7 !important; /* Primary Text (titles, headings) */
+--dm-text-secondary: #B8B5D6 !important; /* Secondary Text (subtext, descriptions) */
+--dm-accent: #9893DA !important; /* Accent (buttons, highlights) */}
+
+/* Theme Toggle Styling */
+.theme-toggle {
+position: relative;
+width: 60px;
+height: 60px;
+cursor: pointer;
+margin-right: 15px;
+}
+
+.theme-toggle .icon {
+position: absolute;
+width: 100%;
+height: 100%;
+transition: opacity 1.5s ease-in-out;
+}
+.theme-toggle .moon-icon { opacity: 0; }
+
+/* 🟢 DARK MODE - Applied to everything inside body.dark-mode */
+body.dark-mode, body.dark-mode .mainHeader, body.dark-mode .portfolioTitle {
+background: var(--dm-bg);
+color: var(--dm-text-primary);
+}
+
+/* Dark Mode for all key elements */
+body.dark-mode .sidebar,
+body.dark-mode .sidebar-container p,
+body.dark-mode .bar-item,
+body.dark-mode .filterButton,
+body.dark-mode .cardWhite,
+body.dark-mode .cardWhite h3,
+body.dark-mode .cardWhite p,
+body.dark-mode .discover {
+background: var(--dm-surface);
+color: var(--dm-text-primary);
+}
+
+/* Secondary text color for descriptions */
+body.dark-mode .cardWhite p {
+color: var(--dm-text-secondary);
+}
+
+/* Accent color for interactive elements */
+body.dark-mode .discover {
+background: var(--dm-accent);
+}
+
+/* Buttons */
+body.dark-mode button {
+background: var(--dm-surface);
+color: var(--dm-text-primary);
+border-color: var(--dm-bg);
+}

@@ -1,0 +1,114 @@
+/* Fonts */
+
+* {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #404042;
+}
+
+h1 {
+    color: black;
+    font-size: 45px;
+    margin: 0;
+}
+
+p {
+    color: black;
+    font-size: 25px;
+}
+
+/* Footer */
+
+#footer {background: rgb(31, 41, 55);padding: 40px 40px 10px 40px ;text-align: center;color: white;}
+.contactList {margin: 0;padding: 0;list-style-type: none;}
+.contactTitle {font-size:  20px;font-weight: bold;}
+.contactInfo {padding-top: 10px;}
+li.contactInfo a{color: white;}
+.socials {display: flex;justify-content: center;align-items: center;gap: 15px;padding-top: 25px;}
+.socials img {width: auto;height: 35px;}
+.copyright {color: lightgray;margin: 0;padding-top: 50px;text-align: center;font-size: 12px;}
+
+
+/* Main Header */
+
+#logo {
+    min-width: 0;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+@media (min-width:993px) {
+    .mainHeader {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        background-color: #f1f1f1;
+        padding: 15px 0px 15px 10px;
+        position: sticky;
+        top: 0;
+    }
+}
+
+@media (max-width:992.99px) {
+    .mainHeader {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        background-color: #f1f1f1;
+        padding: 15px 0;
+        position: sticky;
+        top: 0;
+    }
+}
+
+.logoTitle {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.listMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    min-width: 0;
+    background-color: #f1f1f1;
+}
+
+.listMenu a {
+    font-size: 18px;
+    padding: 15px;
+    text-decoration: none;
+    color: gray;
+}
+
+nav {
+    display: flex;
+    align-items: right;
+    background-color: rgb(233, 233, 233);
+}
+
+/* Temporary text */ 
+
+.temporary h1 {
+    position: absolute;
+    margin: auto;
+    text-align: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 600px;
+    height: 200px;
+}

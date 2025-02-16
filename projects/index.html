@@ -2,13 +2,14 @@
 <html>
 
 <head>
-    <title>Temporary - Projects</title>
+    <title>Projects Porftolio</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="googlebot" content="noindex, nofollow">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="../darkmode.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
@@ -18,7 +19,7 @@
 
     <header class="mainHeader">
         <div class="logoTitle">
-            <a href="https://maverickstation.ca/"><img id="logo" src="../images/newlogo.png" alt="Maverick Lussier"></a>
+            <a href="https://maverickstation.ca/"><img id="logo" class="theme-image" data-light="../images/newlogo.png" data-dark="../images/dm-newlogo.png" src="../images/newlogo.png" alt="Maverick Lussier"></a>
         </div>
         <div>
             <nav class="listMenu">
@@ -105,7 +106,7 @@
         <div id="cardContainer">
             <div class="cards">
                 <div class="cardWhite cardFilter" id="Professional">
-                    <img src="../images/zendesk.png" alt="Zendesk Integration">
+                    <img class="theme-image" data-light="../images/zendesk.png" data-dark="../images/dm-zendesk.png" src="../images/zendesk.png" alt="Zendesk Integration">
                     <h3>Zendesk Integration</h3>
                     <p>Led the end-to-end Zendesk CRM integration, from research and contract negotiation to technical
                         implementation, chatbot development, flow diagramming, and staff training.</p>
@@ -125,7 +126,7 @@
                         legal requirements.</p>
                 </div>
                 <div class="cardWhite cardFilter" id="Professional">
-                    <img src="../images/monday-dot-com.png" alt="Monday.com Platform Integration">
+                    <img src="../images/monday-dot-com.avif" alt="Monday.com Platform Integration">
                     <h3>Monday.com Platform Integration</h3>
                     <p>Integrated Monday.com to streamline workflows, automating task management and enhancing team
                         collaboration for improved efficiency.</p>
@@ -152,7 +153,7 @@
                             target="_blank">Discover</a></button>
                 </div>
                 <div class="cardWhite cardFilter" id="Personal">
-                    <img src="../images/favicon.png" alt="What an amazing Website you're already on eh?">
+                    <img class="theme-image" data-light="../images/favicon.png" data-dark="../images/dm-favicon.png" src="../images/favicon.png" alt="What an amazing Website you're already on eh?">
                     <h3>MaverickStation.ca</h3>
                     <p>My very own portfolio, which also happens to be a Website. How wonderful!</p>
                     <button class="discover"><a href="https://maverickstation.ca/">Already here! </a></button>
@@ -163,7 +164,7 @@
                     <p>Browser based game based on the GROW series. It's very much under construction, but let me know if you'd like to contribute!</p>
                 </div>
                 <div class="cardWhite cardFilter" id="Professional">
-                    <img src="../images/brainidea.png" alt="Anti-Fraud Zapier Automation">
+                    <img class="theme-image" data-light="../images/brainidea.png" data-dark="../images/dm-brainidea.png" src="../images/brainidea.png" alt="Anti-Fraud Zapier Automation">
                     <h3>Anti-Fraud Zapier Automation</h3>
                     <p>What better way to block fraud than to filter it out from the source?</p>
                 </div>
@@ -173,7 +174,7 @@
                     <p>Visual redesign of "Répertoire du patrimoine culturel du Québec", since it looks like it has been stuck in 2005 for quite a while...!</p>
                 </div>
                 <div class="cardWhite cardFilter" id="Professional">
-                    <img src="../images/brainidea.png" alt="Wines & Spirits Articles">
+                    <img class="theme-image" data-light="../images/brainidea.png" data-dark="../images/dm-brainidea.png" src="../images/brainidea.png" alt="Wines & Spirits Articles">
                     <h3>Wines & Spirits Articles</h3>
                     <p>Need some wines & spirits recommendations? Well, I actually wrote a few dozen articles for a popular media! Check it out, and let me know what you chose to drink!</p>
                 </div>
@@ -201,6 +202,8 @@
         <!-- End page content -->
     </div>
     <script src="projects.js"></script>
+    <script src="../darkmode.js"></script>
+
 </body>
 
 </html>
