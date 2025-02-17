@@ -23,6 +23,17 @@ transition: opacity 1.5s ease-in-out;
 }
 .theme-toggle .moon-icon { opacity: 0; }
 
+#theme-toggle-mobile img{padding-left: 16px;}
+.theme-toggle, .sidebar-container {
+outline: none !important;
+box-shadow: none !important;
+-webkit-tap-highlight-color: transparent;
+user-select: none;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+}
+
 /* 🟢 DARK MODE - Applied to everything inside body.dark-mode */
 body.dark-mode, body.dark-mode .mainHeader, body.dark-mode .portfolioTitle {
 background: var(--dm-bg);

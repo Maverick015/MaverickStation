@@ -2,40 +2,79 @@
 <html>
 
 <head>
-    <title>Temporary - About Me</title>
+    <title>Temporary - About me</title>
     <link rel="icon" type="image/x-icon" href="../images/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="googlebot" content="noindex, nofollow">
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="aboutme.css">
+    <link rel="stylesheet" href="../darkmode.css">
 </head>
 
-<body class="light-grey">
-
+<body>
     <header class="mainHeader">
         <div class="logoTitle">
-            <a href="https://maverickstation.ca/"><img id="logo" src="../images/newlogo.png" alt="Maverick Lussier"></a>
+            <a href="https://maverickstation.ca/"><img id="logo" class="theme-image" data-light="../images/newlogo.png"
+                    data-dark="../images/dm-newlogo.png" src="../images/newlogo.png" alt="Maverick Lussier"></a>
         </div>
         <nav class="listMenu">
             <a href="https://maverickstation.ca/">Home</a>
             <a href="https://maverickstation.ca/projects">Projects</a>
             <a href="https://maverickstation.ca/aboutme">About me</a>
             <a href="#footer">Contact</a>
+            <div id="theme-toggle-mobile" class="theme-toggle mobile-only">
+                <img src="../images/sun-sunrise-svgrepo-com.png" alt="Sun Icon" class="icon sun-icon" />
+                <img src="../images/man-on-the-moon-svgrepo-com.png" alt="Moon Icon" class="icon moon-icon" />
+            </div>
         </nav>
+        <div class="header-right">
+            <div id="theme-toggle" class="theme-toggle">
+                <img src="../images/sun-sunrise-svgrepo-com.png" alt="Sun Icon" class="icon sun-icon" />
+                <img src="../images/man-on-the-moon-svgrepo-com.png" alt="Moon Icon" class="icon moon-icon" />
+            </div>
+        </div>
     </header>
+    <div>
+        <div class="slider-container">
+            <div class="slider">
+                <div class="slide one"><img src="../images/MaverickLussier.jpg" alt=""></div>
+                <div class="slide two"><img src="../images/MaverickLussier.jpg" alt=""></div>
+                <div class="slide three"><img src="../images/MaverickLussier.jpg" alt=""></div>
+            </div>
 
-    <div class="temporary">
-        <h1>Under construction, thanks for your support! :D</h1>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
     </div>
-
+    <div id="aboutMe">
+        <div class="aboutMeContainer">
+            <h2>The ever learner, Maverick Lussier</h2>
+            <div class="personDescImg">
+                <p class="personDesc">Big ambitions and an unsatiable curiosity – that’s me in a nutshell.<br><br>
+                    I thrive on challenging projects. When things get
+                    tough, that’s when my troubleshooting skills and passion truly shine.<br><br>
+                    I’m a tech enthusiast (big shocker, right?). Keeping up with the latest trends and innovations is
+                    second nature to me.<br><br>
+                    If this gives you the vibe you're looking for, I’d love to chat. My contact information is just
+                    below – hope to talk to you soon!
+                </p>
+            </div>
+        </div>
+    </div>
     <footer id="footer">
         <div class="contact">
             <ul class="contactList">
                 <li class="contactTitle">Contact information</li>
                 <li class="contactInfo"><a href="tel:+1579-488-3709">579 488-3709</a></li>
-                <li class="contactInfo"><a
-                        href="mailto:maverick.lussier@hotmail.com">Maverick.Lussier@hotmail.com</a></li>
+                <li class="contactInfo"><a href="mailto:maverick.lussier@hotmail.com">Maverick.Lussier@hotmail.com</a>
+                </li>
             </ul>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/maverick-lussier-965498231/" target="_blank"><img
@@ -43,12 +82,11 @@
                 <a href="https://github.com/Maverick015" target="_blank"><img src="../images/github.png"
                         alt="GitHub profile"></a>
             </div>
-            <div class="copyright">Copyright @ MaverickStation.ca 2024</div>
         </div>
+        <div class="copyright">Copyright @ MaverickStation.ca 2025</div>
     </footer>
-    
-    <!-- End page content -->
     <script src="../darkmode.js"></script>
+    <script src="aboutme.js"></script>
 </body>
 
 </html>

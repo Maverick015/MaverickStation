@@ -1,20 +1,20 @@
-const themeToggle = document.getElementById('theme-toggle');
-const sunIcon = document.querySelector('.sun-icon');
-const moonIcon = document.querySelector('.moon-icon');
+const themeToggles = document.querySelectorAll('.theme-toggle'); // Supports multiple buttons
 const themeImages = document.querySelectorAll('.theme-image');
 
-themeToggle.addEventListener('click', async () => {
-    // Check if View Transition API is supported and user hasn't requested reduced motion
-    if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-        toggleDarkMode(); // Fall back to normal toggle
-        return;
-    }
+// Attach event listeners to all theme toggles
+themeToggles.forEach(toggle => {
+    toggle.addEventListener('click', async () => {
+        if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+            toggleDarkMode(); // Fall back to normal toggle
+            return;
+        }
 
-    await document.startViewTransition(() => {
-        toggleDarkMode(); // Perform the dark mode toggle within the transition
-    }).ready;
+        await document.startViewTransition(() => {
+            toggleDarkMode();
+        }).ready;
 
-    applyTransitionEffect();
+        applyTransitionEffect(toggle); // Pass the clicked toggle button
+    });
 });
 
 const toggleDarkMode = () => {
@@ -46,13 +46,19 @@ const updateThemeImages = () => {
 // Update icon opacity based on dark mode state
 const updateIconOpacity = () => {
     const isDark = document.body.classList.contains('dark-mode');
-    sunIcon.style.opacity = isDark ? 0 : 1;
-    moonIcon.style.opacity = isDark ? 1 : 0;
+
+    document.querySelectorAll('.sun-icon').forEach(icon => {
+        icon.style.opacity = isDark ? 0 : 1;
+    });
+
+    document.querySelectorAll('.moon-icon').forEach(icon => {
+        icon.style.opacity = isDark ? 1 : 0;
+    });
 };
 
 // Apply transition effect to the page elements
-const applyTransitionEffect = () => {
-    const { top, left, width, height } = themeToggle.getBoundingClientRect();
+const applyTransitionEffect = (clickedToggle) => {
+    const { top, left, width, height } = clickedToggle.getBoundingClientRect();
     const x = left + width / 2;
     const y = top + height / 2;
     const right = window.innerWidth - left;
@@ -73,3 +79,8 @@ const applyTransitionEffect = () => {
         }
     );
 };
+
+// Ensure icons update correctly on page load
+document.addEventListener('DOMContentLoaded', () => {
+    updateIconOpacity();
+});

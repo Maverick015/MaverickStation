@@ -12,9 +12,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 function filterSelection(category) {
     document.querySelectorAll(".cardFilter").forEach(card => {
-        card.classList.toggle("show", category === "ALL" || card.id === category);
+        // Split card.id into an array of IDs (assuming the IDs are space-separated)
+        const cardIds = card.id.split(" "); // If IDs are space-separated
+
+        // Toggle the 'show' class based on whether the category matches any card's IDs
+        const isMatchingCategory = category === "ALL" || cardIds.includes(category);
+
+        // Apply the 'show' class based on the matching condition
+        card.classList.toggle("show", isMatchingCategory);
     });
 }
+
 
 // Function to open the sidebar with animation
 function ms_open() {
