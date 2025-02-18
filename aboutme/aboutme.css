@@ -9,10 +9,10 @@
 .jumbo { font-size: 64px !important; }
 
 h1 { color: black; font-size: 45px; margin: 0; }
-h2 { font-size: 35px; }
+h2 { font-size: 35px; color: black;}
 h3 { font-size: 25px; margin: 10px 0 0 0; }
 h4 { font-size: 20px; }
-p { color: #ffffff; font-size: 18px; }
+p { color: black; font-size: 18px; }
 
 /* Colors */
 .white, .hover-white:hover { color: #000; background-color: #fff; }
@@ -31,13 +31,6 @@ body { margin: 0px; }
 nav { display: flex; background-color: inherit; }
 .header-right { margin-left: auto; }
 .mobile-only{display: none;}
-
-/* Main Header */
-#logo {min-width: 0;width: 100%;max-width: 300px;height: auto;}
-.logoTitle{display: flex;gap: 10px;flex-wrap: wrap;align-items: center;}
-.listMenu{display: flex;justify-content: center;align-items: center;flex-wrap: wrap;text-align: center;min-width: 0;background-color: inherit;}
-.listMenu a{font-size: 18px;padding: 15px;text-decoration: none;color: gray;}
-nav {display: flex;background-color: rgb(233, 233, 233);}
 
 @media (min-width:993px) {
 .mainHeader {
@@ -62,30 +55,35 @@ padding: 15px 0;
 position: sticky;
 top: 0;}}
 
+/*
+* {border: 1px solid black;}
+*/ 
+
+/* About Me Container */ 
+
+.aboutMeContainer{display: flex;gap: 30px;margin-top: 15px;margin-bottom: 15px;}
+
 /* Slider */ 
 
-.slider-container{position: relative;width: 80%;max-width: 800px;margin: auto;overflow: hidden;}
-.slider{display: flex;transition: transform 0.5s ease-in-out;}
-.slide{width: 100%;height: 500px;background-size: cover;background-position: center;transition: transform 0.5s ease-in-out;}
+.slider-container{position: relative;width: 30%;;margin-left: 15px;overflow: hidden;}
+.slider{display: flex;max-height:450px;transition: transform 0.5s ease-in-out;}
+.slide{width: 400px!important;background-size: cover;background-position: center;transition: transform 0.5s ease-in-out;}
+.slide img{width:400px;max-height:450px;border-radius: 10px}
 .prev,.next{position: absolute;top: 50%;transform: translateY(-50%);background-color: rgba(0, 0, 0, 0.5);
 color: white;padding: 10px;border: none;cursor: pointer;z-index: 10;}
 
+.dot.active{background-color: #333;}
 .prev{left: 10px;}
 .next{right: 10px;}
 .dots-container{text-align: center;margin-top: 10px;}
 .dot{display: inline-block;height: 15px;width: 15px;margin: 0 5px;background-color: gray;
 border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 
-.dot.active{background-color: #333;}
+/* Description */
 
-/* About Me */
-
-#aboutMe{background-color: rgb(31, 41, 55);color: white;padding-bottom: 40px;}
-.aboutMeContainer{display: flex;flex: auto;flex-direction: column;}
-.aboutMeContainer > h2 {text-align: center;}
-.personDescImg{display: flex;justify-content: center;align-items: center;flex-wrap: wrap-reverse;gap: 25px;}
-.personDesc{display: flex;padding: 20px;border: 1px solid white;border-radius: 10px;width: 750px;margin: 0 20px;}
-.slide img{display: flex;min-width: 0;max-width: 450px;height:auto;border-radius: 10px;margin: 0 20px;}
+h2 {text-align: center;}
+.personalityContainer{display:flex;flex-direction: column; justify-content: center;align-items: center;margin-right: 15px;;background-color:orange;border-radius: 25px;}
+.personDesc{display: flex; justify-content: center;align-items: center;padding: 20px;border: 1px solid white;border-radius: 10px;width: 70%}
 
 /* Footer */
 
