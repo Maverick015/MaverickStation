@@ -7,11 +7,10 @@
 .xxlarge { font-size: 36px !important; }
 .xxxlarge { font-size: 48px !important; }
 .jumbo { font-size: 64px !important; }
-
 h1 { color: black; font-size: 45px; margin: 0; }
 h2 { font-size: 35px; color: black;}
 h3 { font-size: 25px; margin: 10px 0 0 0; }
-h4 { font-size: 20px; }
+h4 { font-size: 20px; margin: 10px 0 0 0;}
 p { color: black; font-size: 18px; }
 
 /* Colors */
@@ -24,12 +23,11 @@ p { color: black; font-size: 18px; }
 body { margin: 0px; }
 
 /* Main Header */
-#logo { min-width: 0; max-width: 300px; }
-.logoTitle { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-.listMenu { display: flex; justify-content: center; align-items: center; flex-wrap: wrap; text-align: center; min-width: 0; }
-.listMenu a { font-size: 18px; padding: 15px; text-decoration: none; color: gray; }
-nav { display: flex; background-color: inherit; }
-.header-right { margin-left: auto; }
+.logoTitle,.logoTitle a,#logo{height: 67px; max-width: 300px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
+.listMenu{ display: flex; justify-content: center; align-items: center; flex-wrap: wrap; text-align: center; min-width: 0; }
+.listMenu a{ font-size: 18px; padding: 15px; text-decoration: none; color: gray; }
+nav{display:flex; background-color:inherit; }
+.header-right{ margin-left: auto; }
 .mobile-only{display: none;}
 
 @media (min-width:993px) {
@@ -39,7 +37,7 @@ flex-wrap: wrap;
 gap: 20px;
 align-items: center;
 background-color: #f1f1f1;
-padding: 15px 0px 15px 10px;
+padding: 15px 0px 15px 15px;
 position: sticky;
 top: 0;}}
 
@@ -55,22 +53,26 @@ padding: 15px 0;
 position: sticky;
 top: 0;}}
 
-/*
+/**/
 * {border: 1px solid black;}
-*/ 
+ 
 
 /* About Me Container */ 
 
-.aboutMeContainer{display: flex;gap: 30px;margin-top: 15px;margin-bottom: 15px;}
+.aboutMeContainer{display: flex;gap: 30px;margin: 15px}
 
 /* Slider */ 
 
-.slider-container{position: relative;width: 30%;;margin-left: 15px;overflow: hidden;}
+.slider-container{position: relative;width: 30%;;overflow: hidden;}
 .slider{display: flex;max-height:450px;transition: transform 0.5s ease-in-out;}
 .slide{width: 400px!important;background-size: cover;background-position: center;transition: transform 0.5s ease-in-out;}
 .slide img{width:400px;max-height:450px;border-radius: 10px}
-.prev,.next{position: absolute;top: 50%;transform: translateY(-50%);background-color: rgba(0, 0, 0, 0.5);
+.prev,.next{position: absolute;top: 50%; transform: translateY(-100%);background-color: rgba(0, 0, 0, 0.5);
 color: white;padding: 10px;border: none;cursor: pointer;z-index: 10;}
+
+.one{display: flex;}
+.two{display: none;}
+.three{display:none}
 
 .dot.active{background-color: #333;}
 .prev{left: 10px;}
@@ -82,8 +84,30 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 /* Description */
 
 h2 {text-align: center;}
-.personalityContainer{display:flex;flex-direction: column; justify-content: center;align-items: center;margin-right: 15px;;background-color:orange;border-radius: 25px;}
-.personDesc{display: flex; justify-content: center;align-items: center;padding: 20px;border: 1px solid white;border-radius: 10px;width: 70%}
+.descriptionContainer{border-radius: 10px;}
+.personalityContainer{display:flex;flex-direction: column; justify-content: center;align-items: center}
+.personDesc{display: flex; justify-content: center;align-items: center;border: 1px solid white;border-radius: 10px;width: 70%}
+
+/* Certifications and Technostack cards */
+
+.certificationsAndTechnostack{margin: 0px 15px 25px 15px;}
+
+.certifications{display: flex;gap: 25px;flex-wrap: wrap;justify-content: center;margin-bottom: 25px ;}
+.cards {display: flex; margin-top: 20px;justify-content: center;flex-wrap: wrap;gap: 25px;}
+.certificationsCard {max-width: 250px;box-shadow: 0 0 16px rgba(0, 0, 0,0.1);
+        text-align: center;border-radius: 5px;padding: 25px;}
+.certificationsCard p {height: 250px;font-size: 20px;color: gray;}
+.certificationsCard img {max-width: 250px;height: 150px;border-radius: 5px;}
+
+.technostack{display: flex;gap: 25px;flex-wrap: wrap;justify-content: center}
+.technostackCard {max-width: 100px;box-shadow: 0 0 16px rgba(0, 0, 0,0.1);
+        text-align: center;border-radius: 5px;padding: 25px;}
+.technostackCard img {width: 100px;height: 100px;border-radius: 5px;}
+
+
+/* Testimonials */
+
+.testimonials{margin: 0px 15px 25px 15px;text-align: center;}
 
 /* Footer */
 

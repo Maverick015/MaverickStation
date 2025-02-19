@@ -19,6 +19,11 @@ themeToggles.forEach(toggle => {
 
 const toggleDarkMode = () => {
     document.body.classList.toggle('dark-mode');
+    const isDark = document.body.classList.contains('dark-mode');
+
+    // Store the user's preference in localStorage
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
     updateThemeElements();
     updateThemeImages();
     updateIconOpacity();
@@ -82,5 +87,14 @@ const applyTransitionEffect = (clickedToggle) => {
 
 // Ensure icons update correctly on page load
 document.addEventListener('DOMContentLoaded', () => {
+    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+    const storedTheme = localStorage.getItem('theme');
+    
+    if (storedTheme === "dark" || (!storedTheme && prefersDark)) {
+        document.body.classList.add('dark-mode');
+    }
+
+    updateThemeElements();
+    updateThemeImages();
     updateIconOpacity();
 });
