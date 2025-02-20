@@ -31,3 +31,12 @@ dots.forEach((dot, index) => {
 });
 
 showSlide(currentIndex);
+
+
+gsap.to(".testimonial-track", {
+    x: "-100%", // Moves left infinitely
+    ease: "linear",
+    duration: 20,
+    repeat: -1,
+  });
+  

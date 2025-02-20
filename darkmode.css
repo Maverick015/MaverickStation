@@ -2,6 +2,7 @@
 :root {
 --dm-bg: #22203A !important; /* Dark Mode Background */
 --dm-surface: #2E2B50 !important; /* Surface Elements (cards, containers) */
+--dm-layer: #28A79F !important; /* Surface Elements (cards, containers) */
 --dm-text-primary: #EDEDF7 !important; /* Primary Text (titles, headings) */
 --dm-text-secondary: #B8B5D6 !important; /* Secondary Text (subtext, descriptions) */
 --dm-accent: #9893DA !important; /* Accent (buttons, highlights) */}
@@ -46,8 +47,10 @@ body.dark-mode .sidebar-container p,
 body.dark-mode .bar-item,
 body.dark-mode .filterButton,
 body.dark-mode .cardWhite,
+body.dark-mode .cardWhite h1,
+body.dark-mode .cardWhite h2,
 body.dark-mode .cardWhite h3,
-body.dark-mode .cardWhite p,
+body.dark-mode .cardWhite h4,
 body.dark-mode .discover {
 background: var(--dm-surface);
 color: var(--dm-text-primary);
@@ -55,6 +58,7 @@ color: var(--dm-text-primary);
 
 /* Secondary text color for descriptions */
 body.dark-mode .cardWhite p {
+background: var(--dm-surface);
 color: var(--dm-text-secondary);
 }
 
