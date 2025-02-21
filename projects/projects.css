@@ -129,6 +129,8 @@ nav{display:flex; background-color:inherit; }
 
 /* Portfolio */
 
+.portfolioTitle{padding-bottom: 25px;}
+
         /* Cards */
 
 .cardFilter{display: none;}
