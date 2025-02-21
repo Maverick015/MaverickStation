@@ -17,7 +17,7 @@ p { color: #404042; font-size: 18px; }
 :root{
         --footer-bg: #1f2937;
         --black:#000;
-        --white:#fff;
+        --white:#F5F5F5;
         --gray:#9e9e9e;
         --light-gray:#f1f1f1;
     }
