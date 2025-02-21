@@ -125,8 +125,10 @@
                         alt="GitHub profile"></a>
             </div>
         </div>
-        <div class="copyright">Copyright @ MaverickStation.ca 2025</div>
+        <div class="copyright">Copyright @ MaverickStation.ca <span id="spanYear"></span></div>
+
     </footer>
+    <script>document.getElementById('spanYear').textContent = new Date().getFullYear();</script>
     <script src="darkmode.js"></script>
 </body>
 

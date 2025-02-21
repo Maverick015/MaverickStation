@@ -32,7 +32,6 @@ p { color: #404042; font-size: 18px; }
 body { margin: 0px; }
 
 /* Main Header */
-/* Main Header */
 .logoTitle,.logoTitle a,#logo{height: 67px; max-width: 300px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 .listMenu{ display: flex; justify-content: center; align-items: center; flex-wrap: wrap; text-align: center; min-width: 0; }
 .listMenu a{ font-size: 18px; padding: 15px; text-decoration: none; color: gray; }
