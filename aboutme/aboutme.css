@@ -70,6 +70,12 @@ nav{display:flex; background-color:inherit; }
 .slider{display: flex;max-height:400px;width:calc(inherit * 3); transition: transform 0.5s ease-in-out;}
 .slide {flex-shrink: 0%; width: 400px;background-size:cover;background-position: center;transition: opacity 0.5s ease-in-out;position:relative;}
 .slide img{width:400px;max-height:400px;border-radius: 10px}
+@media (max-width:450px) {
+    .slider-container{max-width: 300px;}
+    .slide{width:300px;}
+    .slide img{width: 300px;}
+}
+
 
 .prev,.next{position: absolute;top: 50%; transform: translateY(-50%);background-color: var(--black);
 color: var(--white);padding: 10px;border: none;cursor: pointer;z-index: 10;}
@@ -104,6 +110,9 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 .technostack{margin-top:50px;display: flex;gap: 25px;flex-wrap: wrap;justify-content: center}
 .technostackCard {width: 125px;text-align: center;border-radius: 5px;padding: 15px;}
 .technostackCard img {max-width: 125px;height: 50px}
+@media (max-width:370px) {
+    .technostackCard{width: 100px;}
+}
 
 /* Testimonials */
 .testimonials{margin: 50px 15px 25px 15px;text-align: center;border-radius: 5px;height: auto;border-radius: 10px;}
@@ -118,16 +127,30 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 
 .scroller{max-width: inherit;}
 .scroller__inner {gap: 2rem;}
-
 .scroller[data-animated="true"] .scroller__inner{max-width: fit-content;flex-wrap: nowrap;
     animation:scroll var(--_animation-duration, 40s) var(--_animation-direction,forwards) linear infinite;}
-
 .scroller[data-animated="true"] {overflow: hidden;-webkit-mask: linear-gradient(90deg,transparent,white 20%,white 80%,
     transparent);mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);}
-
 .scroller[data-direction="left"] {--_animation-direction: forwards;  }
 .scroller[data-speed="slow"] {--_animation-duration: 150s;}
 @keyframes scroll {to {transform: translate(calc(-375% - 7.5rem));}}
+@media (max-width: 770px) { /* Target mobile devices */
+        .scroller__inner {
+        animation: none; /* Disable infinite scroll */
+        max-width: 100%; /* Ensure it doesn't overflow */
+        flex-wrap: nowrap; /* Keep items in a row */
+        overflow-x: auto; /* Enable horizontal scrolling */
+        -webkit-overflow-scrolling: touch; /* Improves touch scroll */
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+@media (max-width: 400px) { /* Target mobile devices */
+    .testimonial{
+        min-width: 200px;
+    }
+}
+
 
 /* Footer */
 #footer {background: var(--footer-bg);padding: 0px 40px 10px 40px;text-align: center;color: var(--white);}

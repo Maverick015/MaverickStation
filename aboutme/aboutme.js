@@ -39,10 +39,11 @@ showSlide(currentIndex);
 
 const scrollers = document.querySelectorAll(".scroller");
 
-// If a user hasn't opted in for recuded motion, then we add the animation
-if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+// If a user hasn't opted in for recuded motion or has a higher screen width than 770px, then we add the animation
+if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches && window.innerWidth > 770) {
     addAnimation();
 }
+
 
 function addAnimation() {
     scrollers.forEach((scroller) => {
@@ -61,5 +62,6 @@ function addAnimation() {
             duplicatedItem.setAttribute("aria-hidden", true);
             scrollerInner.appendChild(duplicatedItem);
         });
+        
     });
 }
