@@ -22,6 +22,8 @@ p { font-size: 1.125rem; } /* ≈ 18px */
 --light-gray:#f1f1f1;
 }
 
+body{margin: 0;}
+
 /* Main Header */
 .logoTitle,.logoTitle a,#logo{height: 67px; max-width: 300px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
 .listMenu{ display: flex; justify-content: center; align-items: center; flex-wrap: wrap; text-align: center; min-width: 0; }
@@ -49,7 +51,7 @@ nav{display:flex; background-color:inherit; }
 
 /* Main Banner */
 
-#banner {color:var(--white); background-image: url(images/background.png);background-size: cover;background-position: center;padding: 175px 0;text-align: center;}
+#banner {color:var(--white); background-image: url(images/background.png);background-size: cover;background-position: center;padding: 400px 0;text-align: center;}
 #banner p {margin-bottom: 40px;color: var(--white);text-align: center;}
 #btnBlue{padding: 10px 15px;border-radius: 5px;background: rgb(32, 32, 167);color: white;text-decoration: none;}
 

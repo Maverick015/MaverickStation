@@ -12,7 +12,7 @@ h1 { font-size: clamp(1.75rem, 2.5vw, 2.25rem); margin: 0; } /* ≈ 28px to 36px
 h2 { font-size: clamp(1.5rem, 2vw, 2rem); margin: 0; } /* ≈ 24px to 32px */
 h3 { font-size: clamp(1.25rem, 1.75vw, 1.5rem); margin: 10px 0 0; } /* ≈ 20px to 24px */
 h4 { font-size: clamp(1.1rem, 1.5vw, 1.4rem); margin: 10px 0 0; } /* ≈ 18px to 22px */
-p { font-size: 1.125rem; max-width: 75ch; } /* ≈ 18px */
+p { font-size: 1.125rem} /* ≈ 18px */
 
 :root{
 --footer-bg: #1f2937;
@@ -98,7 +98,7 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 .cardWhite{background-color: var(--white); }
 .certifications{display: flex;gap: 25px;flex-wrap: wrap;justify-content: center;margin-bottom: 25px ;}
 .certificationsCard {max-width: 250px;text-align: center;border-radius: 5px;padding: 25px;}
-.certificationsCard p {height: 250px;font-size: 20px;color: gray;}
+.certificationsCard p {height: 250px;color: gray;}
 .certificationsCard img {max-width: 250px;height: 150px}
 
 .technostack{margin-top:50px;display: flex;gap: 25px;flex-wrap: wrap;justify-content: center}
