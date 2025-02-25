@@ -108,21 +108,26 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 /* Testimonials */
 .testimonials{margin: 50px 15px 25px 15px;text-align: center;border-radius: 5px;height: auto;border-radius: 10px;}
 .testimonialContainer {border-radius: 10px;overflow: hidden;white-space: wrap;width: 100%;padding: 20px 0; ;}
-.testimonialScroller {border-radius: 10px;display: flex;gap: 25px;flex-wrap: nowrap;}
-.testimonial {overflow-y:scroll;min-width: 300px;padding: 10px 20px;height:22vh;box-shadow: 1px 1px 5px var(--black);border-radius: 10px;font-style: italic;}
+.testimonialScroller {border-radius: 10px;display: flex;}
+.testimonial {overflow-y:scroll;min-width: 300px;padding: 10px 20px;height:22vh;border:1px solid black;border-radius: 10px;font-style: italic;}
 
 .testimonial::-webkit-scrollbar{width: 8px;}
 .testimonial::-webkit-scrollbar-track {opacity: 0;}
 .testimonial::-webkit-scrollbar-thumb {background: #333;border-radius: 10px;  }
 .testimonial::-webkit-scrollbar-thumb:hover {background: #555;}
 
-.scroller[data-animated="true"] {overflow: hidden;-webkit-mask: linear-gradient(90deg,transparent,white 20%,white 80%,transparent)
-    ;mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);}
+.scroller{max-width: inherit;}
+.scroller__inner {gap: 2rem;}
 
-.scroller__inner{animation:scroll var(--_animation-duration, 40s) var(--_animation-direction,forwards) linear infinite;}
-.scroller[data-direction="left"] {--_animation-direction: forwards;}
-.scroller[data-speed="slow"] {--_animation-duration: 103s;}
-@keyframes scroll {to {transform: translate(calc(-400% - 0.5rem));}}
+.scroller[data-animated="true"] .scroller__inner{max-width: fit-content;flex-wrap: nowrap;
+    animation:scroll var(--_animation-duration, 40s) var(--_animation-direction,forwards) linear infinite;}
+
+.scroller[data-animated="true"] {overflow: hidden;-webkit-mask: linear-gradient(90deg,transparent,white 20%,white 80%,
+    transparent);mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);}
+
+.scroller[data-direction="left"] {--_animation-direction: forwards;  }
+.scroller[data-speed="slow"] {--_animation-duration: 150s;}
+@keyframes scroll {to {transform: translate(calc(-375% - 7.5rem));}}
 
 /* Footer */
 #footer {background: var(--footer-bg);padding: 0px 40px 10px 40px;text-align: center;color: var(--white);}
