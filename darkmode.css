@@ -36,12 +36,15 @@ user-select: none;
 }
 
 /* 🟢 DARK MODE - Applied to everything inside body.dark-mode */
-body.dark-mode, body.dark-mode .mainHeader, body.dark-mode .portfolioTitle, body.dark-mode #banner{
+body.dark-mode,
+body.dark-mode .mainHeader, 
+body.dark-mode .portfolioTitle, 
+body.dark-mode #section{
 background: var(--dm-bg);
 color: var(--dm-text-primary);
 }
 
-/* Secondary text color for descriptions */
+/* Secondary background color */
 body.dark-mode .sidebar,
 body.dark-mode .cardWhite,
 body.dark-mode .discover {
@@ -57,13 +60,13 @@ body.dark-mode .cardWhite h2,
 body.dark-mode .cardWhite h3,
 body.dark-mode .cardWhite h4,
 body.dark-mode .cardWhite p,
-body.dark-mode #banner h1 {
+body.dark-mode #section h1 {
 color: var(--dm-text-primary);
 }
 
 /* Secondary text color for descriptions */
 body.dark-mode .cardWhite p,
-body.dark-mode #banner p {
+body.dark-mode #section p {
 color: var(--dm-text-secondary);
 }
 

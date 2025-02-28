@@ -19,25 +19,13 @@ themeToggles.forEach(toggle => {
 
 const toggleDarkMode = () => {
     document.body.classList.toggle('dark-mode');
-    const isDark = document.body.classList.contains('dark-mode');
-
+    
     // Store the user's preference in localStorage
+    const isDark = document.body.classList.contains('dark-mode');
     localStorage.setItem('theme', isDark ? 'dark' : 'light');
 
-    updateThemeElements();
-    updateThemeImages();
-    updateIconOpacity();
-};
-
-// Toggle dark mode for all relevant elements
-const updateThemeElements = () => {
-    const darkModeElements = [
-        ".mainHeader", ".portfolioTitle", ".sidebar", ".sidebar-container p",
-        ".bar-item", ".filterButton", ".cardWhite", ".cardWhite h3", ".cardWhite p", ".discover"
-    ];
-    darkModeElements.forEach(selector => {
-        document.querySelectorAll(selector).forEach(el => el.classList.toggle('dark-mode'));
-    });
+    updateThemeImages();  // Only needed if images change
+    updateIconOpacity();  // Only needed if toggling icons
 };
 
 // Update images based on dark mode status

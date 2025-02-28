@@ -84,7 +84,7 @@ nav{display:flex; background-color:inherit; }
 
 .aboutMeContainer {display: flex;flex: auto;flex-direction: column;}
 .personDescImg {display: flex;justify-content: center;align-items: center;flex-wrap: wrap-reverse;gap: 25px;}
-.personDescImg .personImage {display: flex;min-width: 0;max-width: 450px;height:auto;border-radius: 10px;margin: 0 20px;}
+.personDescImg .personImage {display: flex;min-width: 0;max-width: 450px;height:auto;border-radius: 10px;margin: 20px 20px;}
 .fa-bars{padding-left: 10px;}
 .bar-block{max-width: 300px;padding-left: 16px;}
 .main,#main{transition:margin-left .4s}
@@ -151,7 +151,8 @@ button.discover {background-color: rgb(31, 41, 55);border: 1.5px solid black;bor
         /* Filtering Cards */
 
 .show{display: block;}
-.filterButton{font-size: 16px;}
+.all-selector{width:75px!important}
+.filterButton{font-size: 16px;width: 145px;}
 .filterButton.active {background-color: #666!important;color: white;}
 .col{float:left;width:100%}
 
