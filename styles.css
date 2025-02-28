@@ -1,3 +1,5 @@
+html{background-color:var(--light-gray);}
+
 /* Fonts */
 * {font-family: Georgia, 'Times New Roman', Times, serif;line-height: 1.5;}  
 
@@ -22,7 +24,7 @@ p { font-size: 1.125rem; } /* ≈ 18px */
 --light-gray:#f1f1f1;
 }
 
-body{margin: 0;}
+body{margin: 0}
 
 /* Main Header */
 .logoTitle,.logoTitle a,#logo{height: 67px; max-width: 300px; display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
@@ -49,44 +51,29 @@ nav{display:flex; background-color:inherit; }
         .listMenu{padding: 0px 25px 0px 25px;}
 }
 
-/* Main Banner */
+/* Content */
 
-#banner {color:var(--black);background-color: var(--light-gray); background-size: cover;background-position: center;padding: 175px 0;text-align: center;}
-#banner p {margin-bottom: 40px;color: var(--black);text-align: center;}
-#btnBlue{padding: 10px 15px;border-radius: 5px;background: rgb(32, 32, 167);color: white;text-decoration: none;}
+#section {line-height:0.5!important;color:var(--black);background-color: var(--light-gray);margin-bottom:25px;}
+#section img{padding-top:15px;height:700px;}
 
-/* Project Cards */
+.row{margin-left:150px ;margin-right:150px ;}
 
-.cardFilter{display: none;}
-.container{padding:0.01em 16px;text-align: center;}
-#cardContainer h2, #cardContainer{margin: 40px 0;text-align: center;}
-.cards {display: flex; margin-top: 20px;justify-content: center;flex-wrap: wrap;gap: 25px;}
-.cardWhite {max-width: 250px;background: white;box-shadow: 0 0 16px rgba(0, 0, 0,0.1);
-        text-align: center;border-radius: 5px;padding: 25px;}
-.cardWhite p {height: 250px;font-size: 20px;color: gray;}
-.cardWhite img {max-width: 250px;height: 150px;border-radius: 5px;}
+.container{}
 
-        /* Buttons */
-
-button.discover a{text-decoration: none;color: white;font-size: 16px;}
-button.discover {background-color: rgb(31, 41, 55);border: 1.5px solid black;border-radius: 5px;padding: 5px 15px;}
-
-/* About Me */
-
-#aboutMe{background-color: rgb(31, 41, 55);color: white;padding-bottom: 40px;}
-.aboutMeContainer {display: flex;flex: auto;flex-direction: column;}
-.aboutMeContainer > h2 {text-align: center;}
-.personDescImg {display: flex;justify-content: center;align-items: center;flex-wrap: wrap-reverse;gap: 25px;}
-.personDesc {display: flex;padding: 20px;border: 1px solid white;border-radius: 10px;width: 750px;margin: 0 20px;}
-.personDescImg .personImage {display: flex;min-width: 0;max-width: 450px;height:auto;border-radius: 10px;margin: 0 20px;}
+.maverick{text-align: center;margin-bottom: -7px;}
+.title{text-align: center;padding-top:15px;letter-spacing: 0.5rem;border-top: solid 2.5px #000;}
+.title h1{font-size: 5rem;font-family: "Fugaz One", serif;font-weight: 300;font-style: normal;}
+.description{width: 300px;}
+#not-a-dev-desc p{position: absolute;top:250px;left:150px;}
+#i-do-stuff-desc p{position: absolute;top:500px;right:50px;color: var(--black);}
 
 /* Footer */
 
-#footer {background: var(--footer-bg);padding: 0px 40px 10px 40px;text-align: center;color: var(--white);}
+#footer {position:absolute;width:100%;bottom:0;background: var(--footer-bg);text-align: center;color: var(--white);}
 .contactList {margin: 0;padding: 25px 0px 0px 0px;list-style-type: none;}
 .contactTitle {font-size: 20px;font-weight: bold;}
 .contactInfo {padding-top: 10px;}
 li.contactInfo a{color: var(--white);}
 .socials {display: flex;justify-content: center;align-items: center;gap: 15px;padding-top: 25px;}
 .socials img {width: auto;height: 35px;}
-.copyright {color: lightgray;margin: 0;padding-top: 50px;text-align: center;font-size: 12px;}
+.copyright {color: lightgray;margin: 0;padding: 50px 0;text-align: center;font-size: 12px;}
