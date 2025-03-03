@@ -47,7 +47,8 @@ color: var(--dm-text-primary);
 /* Secondary background color */
 body.dark-mode .sidebar,
 body.dark-mode .cardWhite,
-body.dark-mode .discover {
+body.dark-mode .discover,
+body.dark-mode .filterButton {
 background: var(--dm-surface);
 }
 
