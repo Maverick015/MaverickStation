@@ -109,8 +109,13 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 .cardWhite{background-color: var(--white); }
 .certifications{display: flex;gap: 25px;flex-wrap: wrap;justify-content: center;margin-bottom: 25px ;}
 .certificationsCard {max-width: 250px;text-align: center;border-radius: 5px;padding: 25px;}
-.certificationsCard p {height: 250px;color: var(--gray);}
+.certificationsCard p {max-height: 250px;overflow-y:auto;overflow-x:hidden;color: var(--gray);}
 .certificationsCard img {max-width: 250px;height: 150px}
+
+.certificationsCard p::-webkit-scrollbar{width: 8px;}
+.certificationsCard p::-webkit-scrollbar-track {opacity: 0;}
+.certificationsCard p::-webkit-scrollbar-thumb {background: #333;border-radius: 10px;  }
+.certificationsCard p::-webkit-scrollbar-thumb:hover {background: #555;}
 
 .technostack{margin-top:50px;display: flex;gap: 25px;flex-wrap: wrap;justify-content: center}
 .technostackCard {width: 125px;text-align: center;border-radius: 5px;padding: 15px;}

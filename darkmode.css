@@ -81,7 +81,9 @@ body.dark-mode .title {
 }
 
 /* Accent color for interactive elements */
+body.dark-mode .cardWhite p::-webkit-scrollbar-thumb,
 body.dark-mode .testimonial::-webkit-scrollbar-thumb,
+body.dark-mode .certificationsCard p::-webkit-scrollbar-thumb,
 body.dark-mode .personalityContainer p::-webkit-scrollbar-thumb{
 background: var(--dm-accent);
 }
