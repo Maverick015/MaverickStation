@@ -37,7 +37,7 @@ user-select: none;
 
 /* DARK MODE - Applied to everything inside body.dark-mode */
 body.dark-mode,
-body.dark-mode .mainHeader, 
+body.dark-mode .mainHeader , 
 body.dark-mode .portfolioTitle, 
 body.dark-mode #section{
 background: var(--dm-bg);
@@ -61,7 +61,8 @@ body.dark-mode .cardWhite h2,
 body.dark-mode .cardWhite h3,
 body.dark-mode .cardWhite h4,
 body.dark-mode .cardWhite p,
-body.dark-mode #section h1 {
+body.dark-mode #section h1,
+body.dark-mode .listMenu a {
 color: var(--dm-text-primary);
 }
 
