@@ -24,10 +24,10 @@
                     data-dark="../images/dm-newlogo.png" src="../images/newlogo.png" alt="Maverick Lussier"></a>
         </div>
         <nav class="listMenu">
-            <a href="https://maverickstation.ca/">Home</a>
-            <a href="https://maverickstation.ca/projects">Projects</a>
-            <a href="https://maverickstation.ca/aboutme">About me</a>
-            <a href="#footer">Contact</a>
+            <a id="homeNav" href="https://maverickstation.ca/">Home</a>
+            <a id="projectsNav" href="https://maverickstation.ca/projects">Projects</a>
+            <a id="aboutmeNav" href="https://maverickstation.ca/aboutme">About me</a>
+            <a id="contactNav" href="#footer">Contact</a>
             <div id="theme-toggle-mobile" class="theme-toggle mobile-only">
                 <img src="../images/sun-sunrise-svgrepo-com.png" alt="Sun Icon" class="icon sun-icon" />
                 <img src="../images/man-on-the-moon-svgrepo-com.png" alt="Moon Icon" class="icon moon-icon" />
@@ -57,14 +57,10 @@
             </div>
             <h4><b>Maverick Lussier</b></h4>
             <p>Thank you for checking out my past, and current, projects!
+            <div class="bar-block">
+            <!-- <a href="#latestUpdates"><i class="fa fa-th-large fa-fw margin-right"></i> Latest Updates :</a> -->        
+            </div>
         </div>
-        <div class="bar-block">
-            <!-- 
-            <a href="#portfolioHeader" onclick="ms_close()" class="bar-item button padding text-teal"><i
-                    class="fa fa-th-large fa-fw margin-right"></i> PORTFOLIO</a>
-            <a href="#footer" onclick="ms_close()" class="bar-item button padding"><i
-                    class="fa fa-user fa-fw margin-right"></i> ABOUT</a>
-            -->        
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -73,7 +69,7 @@
         id="myOverlay">
     </div>
 
-    <!-- !PAGE CONTENT! -->
+    <!-- PAGE CONTENT -->
     <div class="main">
 
         <!-- Header -->
@@ -127,7 +123,7 @@
                     <img src="../images/monday-dot-com.avif" alt="Monday.com Platform Integration">
                     <h3>Monday.com Integration</h3>
                     <p>Integrated Monday.com to streamline workflows, automating task management and enhancing team
-                        collaboration for improved efficiency.</p>
+                        collaboration for improved efficiency across multiple organizations.</p>
                 </div>
                 <div class="cardWhite cardFilter" id="Professional Completed">
                     <img src="../images/Hubspot.png" alt="Hubspot Integration">
@@ -147,22 +143,20 @@
                     <img src="../images/Pong_game.png" alt="Laser Pong game">
                     <h3>Laser Pong <br>Game</h3>
                     <p>A surprisingly complex little game! I'll make it even more challenging in due time...</p>
-                    <button class="discover"><a href="https://github.com/Maverick015/laser-pong-game"
-                            target="_blank">Discover</a></button>
+                    <button class="discover"><a href="https://github.com/Maverick015/laser-pong-game" target="_blank">Discover</a></button>
                 </div>
                 <div class="cardWhite cardFilter" id="Personal Completed">
                     <img src="../images/chroniques.png" alt="QR Code Generator">
                     <h3>QR Code <br>Generator</h3>
                     <p>Simple QR Code Generator made with Python during a Hackaton in 2024.</p>
-                    <button class="discover"><a href="https://github.com/Maverick015/qr_code_generator"
-                            target="_blank">Discover</a></button>
+                    <button class="discover"><a href="https://github.com/Maverick015/qr_code_generator" target="_blank">Discover</a></button>
                 </div>
                 <div class="cardWhite cardFilter" id="Personal Ongoing">
                     <img class="theme-image" data-light="../images/favicon.png" data-dark="../images/dm-favicon.png"
                         src="../images/favicon.png" alt="What an amazing Website you're already on eh?">
                     <h3>Maverick's Station (Portfolio)</h3>
                     <p>My very own portfolio, which also happens to be this very website you're currently navigating on. How wonderful! It's made using HTML, CSS, SCSS, and Javascript.</p>
-                    <button class="discover"><a href="https://maverickstation.ca/">Already here! </a></button>
+                    <button class="discover"><a href="https://maverickstation.ca/projects/">Already here! </a></button>
                 </div>
                 <div class="cardWhite cardFilter" id="Personal Ongoing">
                     <img src="../images/map.png" alt="A map's adventure">
@@ -186,6 +180,7 @@
                     <h3>Wines & Spirits Articles</h3>
                     <p>Need some wines & spirits recommendations? Well, I actually wrote a few dozen articles for a
                         popular media! Check it out, and let me know what you chose to drink!</p>
+                    <button class="discover"><a href="https://www.samyrabbat.com/chroniqueurs/maverick-lussier/" target="_blank">Already here! </a></button>
                 </div>
             </div>
         </div>
