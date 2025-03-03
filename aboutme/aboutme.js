@@ -1,7 +1,9 @@
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
+const slider = document.querySelector('.slider');
 let currentIndex = 0;
-const slideWidth = 400; // Match slide width
+
+const getSlideWidth = () => document.querySelector('.slide').clientWidth; // Get dynamic width
 
 const showSlide = (index) => {
     if (index < 0) {
@@ -10,7 +12,7 @@ const showSlide = (index) => {
         currentIndex = 0;
     }
 
-    document.querySelector('.slider').style.transform = `translateX(-${currentIndex * slideWidth}px)`;
+    slider.style.transform = `translateX(-${currentIndex * getSlideWidth()}px)`;
 
     dots.forEach(dot => dot.classList.remove('active'));
     dots[currentIndex].classList.add('active');
@@ -33,7 +35,11 @@ dots.forEach((dot, index) => {
     });
 });
 
+// Ensure correct positioning on window resize
+window.addEventListener('resize', () => showSlide(currentIndex));
+
 showSlide(currentIndex);
+
 
 // Infinite Testimonials Scroller
 
