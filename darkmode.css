@@ -73,10 +73,14 @@ color: var(--dm-text-secondary);
 }
 
 /* Accent color for interactive elements */
-body.dark-mode .discover {
+body.dark-mode .discover{
 background: var(--dm-accent);
 }
 
+body.dark-mode .testimonial::-webkit-scrollbar-thumb,
+body.dark-mode .personalityContainer p::-webkit-scrollbar-thumb {
+    background: var(--dm-accent);
+}
 /* Buttons */
 body.dark-mode button {
 background: var(--dm-surface);

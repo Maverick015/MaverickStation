@@ -90,14 +90,15 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 /* Description */
 .descriptionContainer{border-radius: 10px;height: 400px; max-width: 100vh;margin-bottom: 35px;}
 .personalityContainer h2{padding:10px 0px;margin-bottom:0px;width: 80%;}
-.personalityContainer p{width: 80%;max-height: inherit;overflow-y: scroll;} 
+.personalityContainer p{width: 80%;max-height: inherit;overflow-y: scroll;padding:0 10px} 
 .personalityContainer{display:flex;flex-direction: column; justify-content: center;align-items: center;text-align: center;height: inherit;}
 
 /* Hide scrollbar on Chrome, Safari */
-.personalityContainer p::-webkit-scrollbar{width: 8px;}
+.personalityContainer p::-webkit-scrollbar{width: 8px}
 .personalityContainer p::-webkit-scrollbar-track {opacity: 0;}
 .personalityContainer p::-webkit-scrollbar-thumb {background: #333;border-radius: 10px;  }
 .personalityContainer p::-webkit-scrollbar-thumb:hover {background: #555;}
+
 
 /* Certifications and Technostack cards */
 .cards{margin: 25px 15px 50px 15px;}
@@ -118,7 +119,8 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 .testimonials{margin: 50px 15px 25px 15px;text-align: center;border-radius: 5px;height: auto;border-radius: 10px;}
 .testimonialContainer {border-radius: 10px;overflow: hidden;white-space: wrap;width: 100%;padding: 20px 0; ;}
 .testimonialScroller {border-radius: 10px;display: flex;}
-.testimonial {overflow-y:scroll;min-width: 300px;padding: 10px 20px;height:22vh;border:1px solid black;border-radius: 10px;font-style: italic;}
+.testimonial {overflow-y:scroll;        scrollbar-color: white!important;
+    ;min-width: 300px;padding: 10px 20px;height:22vh;border:1px solid black;border-radius: 10px;font-style: italic;}
 
 .testimonial::-webkit-scrollbar{width: 8px;}
 .testimonial::-webkit-scrollbar-track {opacity: 0;}

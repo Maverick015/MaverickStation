@@ -28,11 +28,30 @@ const toggleDarkMode = () => {
     updateIconOpacity();  // Only needed if toggling icons
 };
 
+const updateThemeElements = () => {
+    const isDark = document.body.classList.contains('dark-mode');
+
+    // Update images based on dark mode status
+    updateThemeImages();
+
+    // Update sun/moon icon visibility
+    updateIconOpacity();
+
+    // (Optional) Add other UI changes if needed
+    document.querySelectorAll('.theme-dependent').forEach(el => {
+        el.classList.toggle('dark-theme-style', isDark);
+    });
+
+    console.log("Theme updated:", isDark ? "Dark Mode" : "Light Mode");
+};
+
+
 // Update images based on dark mode status
 const updateThemeImages = () => {
     const isDark = document.body.classList.contains('dark-mode');
     themeImages.forEach(image => {
         image.src = isDark ? image.getAttribute('data-dark') : image.getAttribute('data-light');
+    
     });
 };
 
