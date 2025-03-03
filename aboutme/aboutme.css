@@ -146,15 +146,14 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 .scroller[data-speed="slow"] {--_animation-duration: 150s;}
 
 @keyframes scroll {to {transform: translate(calc(-375% - 7.5rem));}}
-@media (max-width: 770px) { /* Target mobile devices */
+@media (max-width: 770px) { /* Target small laptops & mobile devices */
         .scroller__inner {
-        animation: none; /* Disable infinite scroll */
-        max-width: 100%; /* Ensure it doesn't overflow */
-        flex-wrap: nowrap; /* Keep items in a row */
-        overflow-x: auto; /* Enable horizontal scrolling */
-        -webkit-overflow-scrolling: touch; /* Improves touch scroll */
-        padding-left: 1rem;
-        padding-right: 1rem;
+        animation: none; 
+        max-width: 100%; 
+        flex-wrap: nowrap; 
+        overflow-x:scroll; 
+        padding: 10px 1rem 10px 1rem;
+        -webkit-overflow-scrolling: touch; 
     }
 }
 @media (max-width: 400px) { /* Target mobile devices */
