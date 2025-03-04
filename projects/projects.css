@@ -20,6 +20,8 @@ p { font-size: 1.125rem;} /* ≈ 18px */
 --white:#fff;
 --gray:#555;
 --light-gray:#f1f1f1;
+--aboutme-color:#E5625E;
+--projects-color:#4c956c;
 }
     
 /* Colors */
@@ -90,11 +92,10 @@ nav{display:flex; background-color:inherit; }
 .personDescImg {display: flex;justify-content: center;align-items: center;flex-wrap: wrap-reverse;gap: 25px;}
 .personDescImg .personImage {display: flex;min-width: 0;max-width: 450px;height:auto;border-radius: 10px;margin: 20px 20px;}
 .fa-bars{padding-left: 10px;}
-.bar-block{max-width: 300px;padding-left: 16px;}
+.bar-block{max-width: 300px;padding-left: 16px;width:100%;display:block;padding:0px;text-align:left;border:none;white-space:normal;float:none;outline:0;text-decoration:none;color:var(--black)}
 .main,#main{transition:margin-left .4s}
 .main{margin-left: 300px;}
 .filterButton{white-space:normal;margin-bottom: 8px;}
-.bar-block .bar-item{width:100%;display:block;padding:8px 0px;text-align:left;border:none;white-space:normal;float:none;outline:0;text-decoration:none;color:var(--black)}
 .btn,.filterButton{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;text-align:center;cursor:pointer;white-space:nowrap;-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}
 .btn:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19)}
 .sidebar-container{padding: 0px 15px}

@@ -22,11 +22,11 @@
                     data-dark="../images/dm-newlogo.png" src="../images/newlogo.png" alt="Maverick Lussier Portrait">
             </a>
         </div>
-        <nav class="listMenu">
-            <a id="homeNav" href="https://maverickstation.ca/">Home</a>
-            <a id="projectsNav" href="https://maverickstation.ca/projects">Projects</a>
-            <a id="aboutmeNav" href="https://maverickstation.ca/aboutme">About me</a>
-            <a id="contactNav" href="#footer">Contact</a>
+        <nav class="listMenu" aria-label="Main Navigation">
+            <a id="homeNav" href="https://maverickstation.ca/" aria-label="Home">Home</a>
+            <a id="projectsNav" href="https://maverickstation.ca/projects" aria-label="Projects">Projects</a>
+            <a id="aboutmeNav" href="https://maverickstation.ca/aboutme" aria-label="About me">About me</a>
+            <a id="contactNav" href="#footer" aria-label="Contact">Contact</a>
             <div id="theme-toggle-mobile" class="theme-toggle mobile-only">
                 <img src="../images/sun-sunrise-svgrepo-com.png" alt="Sun Icon" class="icon sun-icon" />
                 <img src="../images/man-on-the-moon-svgrepo-com.png" alt="Moon Icon" class="icon moon-icon" />
@@ -43,10 +43,9 @@
     <div class="aboutMeContainer">
         <div class="slider-container">
             <div class="slider">
-                <div class="slide one"><img src="../images/Untitled design.png" alt="Maverick Lussier Portrait"></div>
-                <div class="slide two"><img src="../images/Untitled design (2).png" alt="Maverick Lussier Portrait"></div>
-                <div class="slide three"><img src="../images/Untitled design (1).png"
-                        alt="Maverick Lussier Portrait"></div>
+                <div class="slide one"><img src="../images/Untitled design.png" alt="Maverick Lussier in a distillerie"></div>
+                <div class="slide two"><img src="../images/Untitled design (2).png" alt="Maverick Lussier at an SAQ event"></div>
+                <div class="slide three"><img src="../images/Untitled design (1).png" alt="Maverick Lussier discussing with experts"></div>
             </div>
             <button class="prev">&#10094;</button>
             <button class="next">&#10095;</button>
@@ -239,20 +238,20 @@
         <div class="contact">
             <ul class="contactList">
                 <li class="contactTitle">Contact information</li>
-                <li class="contactInfo"><a href="mailto:maverick.lussier@hotmail.com">maverick@maverickstation.ca</a>
-                </li>
+                <li class="contactInfo" aria-label="Email Address"><a
+                        href="mailto:maverick.lussier@hotmail.com">maverick@maverickstation.ca</a></li>
             </ul>
             <div class="socials">
                 <a href="https://www.linkedin.com/in/maverick-lussier-965498231/" target="_blank"><img
-                        src="../images/LinkedIn.png" alt="LinkedIn profile"></a>
-                <a href="https://github.com/Maverick015" target="_blank"><img src="../images/github.png"
+                        src="images/LinkedIn.png" alt="LinkedIn profile"></a>
+                <a href="https://github.com/Maverick015" target="_blank"><img src="images/github.png"
                         alt="GitHub profile"></a>
             </div>
         </div>
         <div class="copyright">Copyright @ MaverickStation.ca <span id="spanYear"></span></div>
     </footer>
     <script>document.getElementById('spanYear').textContent = new Date().getFullYear();</script>
-    <script src="../darkmode.js"></script>
+    <script src="../darkmode.js" defer></script>
     <script src="aboutme.js"></script>
 </body>
 

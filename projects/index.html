@@ -23,11 +23,11 @@
             <a href="https://maverickstation.ca/"><img id="logo" class="theme-image" data-light="../images/newlogo.png"
                     data-dark="../images/dm-newlogo.png" src="../images/newlogo.png" alt="Maverick Lussier"></a>
         </div>
-        <nav class="listMenu">
-            <a id="homeNav" href="https://maverickstation.ca/">Home</a>
-            <a id="projectsNav" href="https://maverickstation.ca/projects">Projects</a>
-            <a id="aboutmeNav" href="https://maverickstation.ca/aboutme">About me</a>
-            <a id="contactNav" href="#footer">Contact</a>
+        <nav class="listMenu" aria-label="Main Navigation">
+            <a id="homeNav" href="https://maverickstation.ca/" aria-label="Home">Home</a>
+            <a id="projectsNav" href="https://maverickstation.ca/projects" aria-label="Projects">Projects</a>
+            <a id="aboutmeNav" href="https://maverickstation.ca/aboutme" aria-label="About me">About me</a>
+            <a id="contactNav" href="#footer" aria-label="Contact">Contact</a>
             <div id="theme-toggle-mobile" class="theme-toggle mobile-only">
                 <img src="../images/sun-sunrise-svgrepo-com.png" alt="Sun Icon" class="icon sun-icon" />
                 <img src="../images/man-on-the-moon-svgrepo-com.png" alt="Moon Icon" class="icon moon-icon" />
@@ -58,9 +58,9 @@
             <h4><b>Maverick Lussier</b></h4>
             <p>Thank you for checking out my past, and current, projects!
             <div class="bar-block">
-            <!-- <a href="#latestUpdates"><i class="fa fa-th-large fa-fw margin-right"></i> Latest Updates :</a> 
+             <p><i class="fa fa-th-large"></i> Latest Website Updates :</p>
              
-            Curious aren't you? This feature is under development! Though as a sneak peak, it's going to provide visitors with
+            <!-- Curious aren't you? This feature is under development! Though as a sneak peak, it's going to provide visitors with
             a view of the latest github activity relating to this website! :)
             -->        
             </div>
@@ -193,23 +193,23 @@
             <div class="contact">
                 <ul class="contactList">
                     <li class="contactTitle">Contact information</li>
-                    <li class="contactInfo"><a href="mailto:maverick.lussier@hotmail.com">maverick@maverickstation.ca</a></li>
+                    <li class="contactInfo" aria-label="Email Address"><a
+                            href="mailto:maverick.lussier@hotmail.com">maverick@maverickstation.ca</a></li>
                 </ul>
                 <div class="socials">
                     <a href="https://www.linkedin.com/in/maverick-lussier-965498231/" target="_blank"><img
-                            src="../images/LinkedIn.png" alt="LinkedIn profile"></a>
-                    <a href="https://github.com/Maverick015" target="_blank"><img src="../images/github.png"
+                            src="images/LinkedIn.png" alt="LinkedIn profile"></a>
+                    <a href="https://github.com/Maverick015" target="_blank"><img src="images/github.png"
                             alt="GitHub profile"></a>
                 </div>
-                <div class="copyright">Copyright @ MaverickStation.ca <span id="spanYear"></span></div>
             </div>
         </footer>
 
 
     </footer>
     <script>document.getElementById('spanYear').textContent = new Date().getFullYear();</script>
-    <script src="projects.js"></script>
-    <script src="../darkmode.js"></script>
+    <script src="projects.js" defer></script>
+    <script src="../darkmode.js" defer></script>
 
 </body>
 
