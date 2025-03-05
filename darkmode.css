@@ -39,7 +39,8 @@ user-select: none;
 body.dark-mode,
 body.dark-mode .mainHeader , 
 body.dark-mode .portfolioTitle, 
-body.dark-mode #section{
+body.dark-mode #section,
+body.dark-mode .commit-container{
 background: var(--dm-bg);
 color: var(--dm-text-primary);
 }
@@ -62,7 +63,9 @@ body.dark-mode .cardWhite h3,
 body.dark-mode .cardWhite h4,
 body.dark-mode .cardWhite p,
 body.dark-mode #section h1,
-body.dark-mode .listMenu a {
+body.dark-mode .listMenu a,
+body.dark-mode .bar-block h3,
+body.dark-mode .commit-title {
 color: var(--dm-text-primary);
 }
 
@@ -70,21 +73,20 @@ color: var(--dm-text-primary);
 body.dark-mode .cardWhite p,
 body.dark-mode .sidebar-container p,
 body.dark-mode #section p,
-body.dark-mode  {
+body.dark-mode,
+body.dark-mode .commit-desc,
+body.dark-mode  #thanks  {
 color: var(--dm-text-secondary);
 }
 
-/* Color for borders */
 
-body.dark-mode .title {
-    border-color: white;
-}
 
 /* Accent color for interactive elements */
 body.dark-mode .cardWhite p::-webkit-scrollbar-thumb,
 body.dark-mode .testimonial::-webkit-scrollbar-thumb,
 body.dark-mode .certificationsCard p::-webkit-scrollbar-thumb,
-body.dark-mode .personalityContainer p::-webkit-scrollbar-thumb{
+body.dark-mode .personalityContainer p::-webkit-scrollbar-thumb,
+body.dark-mode .sidebar-container::-webkit-scrollbar-thumb{
 background: var(--dm-accent);
 }
 
@@ -101,4 +103,16 @@ body.dark-mode #createCTA, body.dark-mode #projectsNav:hover{
 
 body.dark-mode #myselfCTA, body.dark-mode #aboutmeNav:hover{
     background-color: #d6b8b5 ;
+}
+
+/* Special */
+
+body.dark-mode .title {
+    border-color: white;
+}
+
+body.dark-mode .commit-container{background-color: rgb(66, 62, 114);
+}
+
+body.dark-mode .commit-container::after {background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(66, 62, 114, 1))
 }

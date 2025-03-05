@@ -1,11 +1,11 @@
 const themeToggles = document.querySelectorAll('.theme-toggle'); // Supports multiple buttons
-const themeImages = document.querySelectorAll('.theme-image');
+let themeImages = document.querySelectorAll('.theme-image');
 
 // Attach event listeners to all theme toggles
 themeToggles.forEach(toggle => {
     toggle.addEventListener('click', async () => {
         if (!document.startViewTransition || window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
-            toggleDarkMode(); // Fall back to normal toggle
+            toggleDarkMode(); 
             return;
         }
 
@@ -13,7 +13,7 @@ themeToggles.forEach(toggle => {
             toggleDarkMode();
         }).ready;
 
-        applyTransitionEffect(toggle); // Pass the clicked toggle button
+        applyTransitionEffect(toggle); 
     });
 });
 
@@ -37,7 +37,6 @@ const updateThemeElements = () => {
     // Update sun/moon icon visibility
     updateIconOpacity();
 
-    // (Optional) Add other UI changes if needed
     document.querySelectorAll('.theme-dependent').forEach(el => {
         el.classList.toggle('dark-theme-style', isDark);
     });

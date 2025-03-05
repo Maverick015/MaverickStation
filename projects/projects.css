@@ -83,7 +83,7 @@ nav{display:flex; background-color:inherit; }
 .commit-container {position: relative;overflow: hidden;background-color: #f4f4f4;border: 1px solid var(--footer-bg);border-radius: 5px;padding: 10px;height: 120px;}
 
 .commit-container::after {content: "";position: absolute;bottom: 0;left: 0;right: 0;height: 50px;background: linear-gradient(to bottom, rgba(244, 244, 244, 0), rgba(244, 244, 244, 1)); pointer-events: none;}
-.commit-image{width:20px;height: 20px;margin-right: 10px;margin-bottom:-3px;}
+.commit-title img{width:20px;height: 20px;margin-right: 10px;margin-bottom:-3px;}
 .commit-title{margin:0px;font-size:1rem!important;}
 .commit-desc{margin:5px 0px;font-size:0.9rem!important;}
 #thanks{width:250px;margin:20px;text-align:center;}
