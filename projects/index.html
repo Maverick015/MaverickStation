@@ -45,26 +45,15 @@
 
     <nav class="sidebar collapse white" style="z-index:3;width:300px;" id="mySidebar">
         <div class="sidebar-container">
-            <a href="#" onclick="ms_close()" class="hide-large right xxxlarge hover-grey" title="close menu">
-                <i class="fa fa-remove"></i>
-            </a>
-            <div id="aboutMe">
-                <div class="aboutMeContainer">
-                    <div class="personDescImg">
-                        <img class="personImage" src="../images/MaverickLussier.jpg" alt="Maverick Lussier">
-                    </div>
-                </div>
-            </div>
-            <h4><b>Maverick Lussier</b></h4>
-            <p>Thank you for checking out my past, and current, projects!
             <div class="bar-block">
-             <p><i class="fa fa-th-large"></i> Latest Website Updates :</p>
-             
-            <!-- Curious aren't you? This feature is under development! Though as a sneak peak, it's going to provide visitors with
-            a view of the latest github activity relating to this website! :)
-            -->        
+                <h3> Latest Updates</h4>
+                <ul id="commitHistory">
+                    <!-- Commits show up here <li> items -->
+                </ul>
             </div>
+            
         </div>
+        <p id="thanks">Thank you for checking out my past, and current, projects!</p>
     </nav>
 
     <!-- Overlay effect when opening sidebar on small screens -->
@@ -189,22 +178,21 @@
             </div>
         </div>
 
-        <footer id="footer">
-            <div class="contact">
-                <ul class="contactList">
-                    <li class="contactTitle">Contact information</li>
-                    <li class="contactInfo" aria-label="Email Address"><a
-                            href="mailto:maverick.lussier@hotmail.com">maverick@maverickstation.ca</a></li>
-                </ul>
-                <div class="socials">
-                    <a href="https://www.linkedin.com/in/maverick-lussier-965498231/" target="_blank"><img
-                            src="images/LinkedIn.png" alt="LinkedIn profile"></a>
-                    <a href="https://github.com/Maverick015" target="_blank"><img src="images/github.png"
-                            alt="GitHub profile"></a>
-                </div>
+    <footer id="footer">
+        <div class="contact">
+            <ul class="contactList">
+                <li class="contactTitle">Contact information</li>
+                <li class="contactInfo" aria-label="Email Address"><a
+                        href="mailto:maverick.lussier@hotmail.com">maverick@maverickstation.ca</a></li>
+            </ul>
+            <div class="socials">
+                <a href="https://www.linkedin.com/in/maverick-lussier-965498231/" target="_blank"><img
+                        src="../images/LinkedIn.png" alt="LinkedIn profile"></a>
+                <a href="https://github.com/Maverick015" target="_blank"><img src="../images/dm-github.png"
+                        alt="GitHub profile"></a>
             </div>
-        </footer>
-
+            <div class="copyright">Copyright @ MaverickStation.ca <span id="spanYear"></span></div>
+        </div>
 
     </footer>
     <script>document.getElementById('spanYear').textContent = new Date().getFullYear();</script>

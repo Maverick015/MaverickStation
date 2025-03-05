@@ -1,3 +1,40 @@
+// Function to fetch the latest commits from the GitHub API
+document.addEventListener("DOMContentLoaded", function() {
+    const repoOwner = "Maverick015";  // Replace with your GitHub username
+    const repoName = "MaverickStation"; // Replace with your repository name
+    const apiUrl = `https://api.github.com/repos/${repoOwner}/${repoName}/commits`;
+
+    fetch(apiUrl)
+        .then(response => response.json())
+        .then(commits => {
+            const commitList = document.getElementById("commitHistory");
+            
+            // Loop through the first 5 commits and display them
+            commits.slice(0, 10).forEach(commit => {
+                const listItem = document.createElement("li");
+                listItem.classList.add("commit-item"); // Add a class for styling
+
+                // Split commit message into title and description
+                const messageParts = commit.commit.message.split("\n");
+                const title = messageParts[0];  
+                const description = messageParts.slice(1).join(" "); // Combine extra lines
+
+                listItem.innerHTML = `
+                <a href="${commit.html_url}" target="_blank" class="commit-link">
+                <div class="commit-container">
+                    <h4 class="commit-title"><img class="commit-image" src="../images/github.png">${title}</h4>
+                    <p class="commit-desc">${description}</p>
+                </div>
+                </a>
+            `;
+            
+                
+                commitList.appendChild(listItem);
+            });
+        })
+        .catch(error => console.error("Error fetching commits:", error));
+});
+
 document.addEventListener("DOMContentLoaded", () => {
     filterSelection("ALL"); // Show all cards initially
 

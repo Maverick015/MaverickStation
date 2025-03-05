@@ -103,7 +103,7 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 /* Hide scrollbar on Chrome, Safari */
 .personalityContainer p::-webkit-scrollbar{width: 8px}
 .personalityContainer p::-webkit-scrollbar-track {opacity: 0;}
-.personalityContainer p::-webkit-scrollbar-thumb {background: #333;border-radius: 10px;  }
+.personalityContainer p::-webkit-scrollbar-thumb {background: #dddddd;border-radius: 10px;  }
 .personalityContainer p::-webkit-scrollbar-thumb:hover {background: #555;}
 
 
@@ -117,7 +117,7 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 
 .certificationsCard p::-webkit-scrollbar{width: 8px;}
 .certificationsCard p::-webkit-scrollbar-track {opacity: 0;}
-.certificationsCard p::-webkit-scrollbar-thumb {background: #333;border-radius: 10px;  }
+.certificationsCard p::-webkit-scrollbar-thumb {background: #dddddd;border-radius: 10px;  }
 .certificationsCard p::-webkit-scrollbar-thumb:hover {background: #555;}
 
 .technostack{margin-top:50px;display: flex;gap: 25px;flex-wrap: wrap;justify-content: center}
@@ -135,7 +135,7 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 
 .testimonial::-webkit-scrollbar{width: 8px;}
 .testimonial::-webkit-scrollbar-track {opacity: 0;}
-.testimonial::-webkit-scrollbar-thumb {background: #333;border-radius: 10px;  }
+.testimonial::-webkit-scrollbar-thumb {background: #dddddd;border-radius: 10px;  }
 .testimonial::-webkit-scrollbar-thumb:hover {background: #555;}
 
 .scroller{max-width: inherit;}
