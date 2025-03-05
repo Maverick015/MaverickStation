@@ -70,6 +70,7 @@ nav{display:flex; background-color:inherit; }
 .sidebar-container{overflow-y: auto;max-height:100%;padding: 0px 15px;}
 .bar-block{max-height:80vh;max-width: 300px;padding-left: 16px;width:100%;display:block;padding:0px;text-align:left;border:none;white-space:normal;float:none;outline:0;text-decoration:none;color:var(--black)}
 .bar-block h3{margin-top:20px;text-align:center;}
+.bar-block p{margin-top:10px;text-align:center;}
 
 .sidebar-container::-webkit-scrollbar{width: 8px;}
 .sidebar-container::-webkit-scrollbar-track {opacity: 0;}
