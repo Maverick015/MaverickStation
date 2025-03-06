@@ -31,7 +31,8 @@ p { font-size: 1.125rem} /* ≈ 18px */
 .light-grey, .hover-light-grey:hover, .light-gray, .hover-light-gray:hover { color: var(--black); background-color: var(--light-gray); }
 
 /* Body */
-body { margin: 0px; }
+body { margin: 0px;min-height: 100vh;display: flex;flex-direction: column;}
+.content-wrapper {display: flex;flex-direction:column;min-height:100vh}
 
 /* Main Header */
 .mainHeader{z-index: 1000;}
@@ -166,8 +167,8 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 
 
 /* Footer */
-#footer {background: var(--footer-bg);padding: 0px 40px 10px 40px;text-align: center;color: var(--white);}
-.contactList {margin: 0;padding: 25px 0px 0px 0px;list-style-type: none;}
+#footer {margin-top: auto;background: var(--footer-bg);padding: 40px 40px 10px 40px;text-align: center;color: var(--white);}
+.contactList {margin: 0;padding:0;list-style-type: none;}
 .contactTitle {font-size: 20px;font-weight: bold;}
 .contactInfo {padding-top: 10px;}
 li.contactInfo a{color: var(--white);}

@@ -1,5 +1,5 @@
-html{background-color:var(--light-gray);}
-body{margin: 0}
+html{background-color:var(--light-gray);height: 100%;}
+body{margin: 0;min-height: 100vh;display: flex;flex-direction: column;}
 
 /* Fonts */
 * {font-family: Georgia, 'Times New Roman', Times, serif;line-height: 1.5;}  
@@ -46,7 +46,7 @@ nav{display:flex; background-color:inherit; }
         .listMenu{padding: 0px 25px 0px 25px;}}
 
 /* Section styles */
-#section {position: relative;line-height: 0.5 !important;color: var(--black);background-color: var(--light-gray);margin-bottom: 25px;text-align: center;}
+#section {flex:1;display:flex;flex-direction:column;line-height: 0.5 !important;color: var(--black);background-color: var(--light-gray);margin-bottom: 25px;text-align: center;}
 #section img {padding-top: 15px;margin: 0 15px;margin-bottom: -7px;}
 .container {margin: 0 auto;position: relative;max-width: 1040px;width: 90%;}
 .title {color: var(--footer-bg);padding-top: 15px;letter-spacing: 0.5rem;border-top: solid 2.5px var(--black);font-size: clamp(2.5rem, 5rem, 7rem);font-family: "Pridi", serif;font-weight: 400;}
@@ -62,39 +62,43 @@ nav{display:flex; background-color:inherit; }
 #createCTA {border-radius: 25px;background-color:#4c956c;padding:0 5px 5px 5px;}
 #createCTA a {text-decoration: none;color:var(--footer-bg);}
 
+/* Large Screens (Desktops) */
+@media (min-width: 1200px) {
+#section img {height: 700px;}
+.container {max-width: 1040px;}
+}
 
-    /* Large Screens (Desktops) */
-    @media (min-width: 1200px) {
-        #section img {height: 700px;}
-        .container {max-width: 1040px;}
-    }
-    
-    /* Medium Screens (Laptops & Tablets) */
-    @media (min-width: 993px) and (max-width: 1199.99px) {
-        #section img {height: 700px;}
-        .container {max-width: 850px;}
-    }
-    
-    /* Tablets & Smaller Laptops */
-    @media (max-width: 992.99px) {
-        #section img {height: 500px;}
-        .container {width: 90%;max-width: 850px;}
-        #not-a-dev-desc,#i-make-stuff-desc {display: none;}}
+/* Medium Screens (Laptops & Tablets) */
+@media (max-width: 1199.99px) {
+#section img {height: 700px;}
+.container {max-width: 850px;}
+.footer{position:relative;bottom:0;width:100%}
+#not-a-dev-desc {top: 150px;left: -70px;}    
+#i-make-stuff-desc {top: 450px;right: -70px;}
+}
 
-    /* Mobile Screens */
-    @media (max-width: 500px) {
-        #section{width: auto;}#section img {height: 400px;}
+/* Tablets & Smaller Laptops */
+@media (max-width: 992.99px) {
+#section img {height: 500px;}
+.container {width: 90%;max-width: 850px;}
+#not-a-dev-desc,#i-make-stuff-desc {display: none;}
+}
 
-        .container {max-width: fit-content;padding: 0 15px;}
-        .title{font-size: 15vw;}
-        #not-a-dev-desc,#i-make-stuff-desc {display: none;}}
-        
+/* Mobile Screens */
+@media (max-width: 500px) {
+#section{width: auto;}#section img {height: 400px;}
+
+.container {max-width: fit-content;padding: 0 15px;}
+.title{font-size: 15vw;}
+#not-a-dev-desc,#i-make-stuff-desc {display: none;}
+}
+
 /* Footer */
-#footer {width:100%;bottom:0;background: var(--footer-bg);text-align: center;color: var(--white);}
-.contactList {margin: 0;padding: 25px 0px 0px 0px;list-style-type: none;}
+#footer {padding: 40px 0 10px 0;margin-top: auto;width:100%;background: var(--footer-bg);text-align: center;color: var(--white);}
+.contactList {margin: 0;padding: 0;list-style-type: none;}
 .contactTitle {font-size: 20px;font-weight: bold;}
 .contactInfo {padding-top: 10px;}
 li.contactInfo a{color: var(--white);}
 .socials {display: flex;justify-content: center;align-items: center;gap: 15px;padding-top: 25px;}
 .socials img {width: auto;height: 35px;}
-.copyright {color: var(--light-gray);margin: 0;padding: 50px 0;text-align: center;font-size: 12px;}
+.copyright {color: var(--light-gray);margin: 0;padding: 50px 0 0 0;text-align: center;font-size: 12px;}

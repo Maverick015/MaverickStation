@@ -10,7 +10,7 @@
     <meta name="robots" content="noindex">
     <link rel="stylesheet" href="aboutme.css">
     <link rel="stylesheet" href="../darkmode.css">
-    <script>(function (w, d, s, l, i) {w[l] = w[l] || []; w[l].push({'gtm.start':new Date().getTime(), event: 'gtm.js'}); var f = d.getElementsByTagName(s)[0],j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src ='https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);})(window, document, 'script', 'dataLayer', 'GTM-K57DZNFK');</script>
+    <script>(function (w, d, s, l, i) { w[l] = w[l] || []; w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' }); var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f); })(window, document, 'script', 'dataLayer', 'GTM-K57DZNFK');</script>
 </head>
 
 <body class="light-grey">
@@ -39,200 +39,255 @@
             </div>
         </div>
     </header>
-    <!-- About Me Container -->
-    <div class="aboutMeContainer">
-        <div class="slider-container">
-            <div class="slider">
-                <div class="slide one"><img src="../images/Untitled design.png" alt="Maverick Lussier in a distillerie"></div>
-                <div class="slide two"><img src="../images/Untitled design (2).png" alt="Maverick Lussier at an SAQ event"></div>
-                <div class="slide three"><img src="../images/Untitled design (1).png" alt="Maverick Lussier discussing with experts"></div>
+    <div class="content-wrapper">
+        <!-- About Me Container -->
+        <div class="aboutMeContainer">
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slide one"><img src="../images/Untitled design.png"
+                            alt="Maverick Lussier in a distillerie"></div>
+                    <div class="slide two"><img src="../images/Untitled design (2).png"
+                            alt="Maverick Lussier at an SAQ event"></div>
+                    <div class="slide three"><img src="../images/Untitled design (1).png"
+                            alt="Maverick Lussier discussing with experts"></div>
+                </div>
+                <button class="prev">&#10094;</button>
+                <button class="next">&#10095;</button>
+                <div class="dots-container">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
             </div>
-            <button class="prev">&#10094;</button>
-            <button class="next">&#10095;</button>
-            <div class="dots-container">
-                <span class="dot"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
-        </div>
 
-        <div class="descriptionContainer cardWhite">
-            <div class="personalityContainer">
-                <h2>Maverick Lussier<br>Always Learning, Always Growing</h2>
-                <p>I’m fueled by curiosity and the thrill of solving complex problems. Whether it’s optimizing workflows, refining digital experiences, or tackling data-driven challenges, I thrive where strategy meets execution.<br><br>
-                    Technology isn’t just something I follow—it’s something I integrate, adapt, and leverage to drive meaningful change. From streamlining operations to enhancing customer journeys, I take a hands-on approach to creating real impact.<br><br>
-                    I believe that learning never stops. Staying ahead of industry trends, exploring emerging tools, and refining my expertise are all part of the process. Every challenge is an opportunity to push limits, rethink the status quo, and build something better.<br><br>
-                    If that sounds like the mindset you’re looking for, let’s connect. My contact info is just below—looking forward to the conversation!
-                </p>
+            <div class="descriptionContainer cardWhite">
+                <div class="personalityContainer">
+                    <h2>Maverick Lussier<br>Always Learning, Always Growing</h2>
+                    <p>I’m fueled by curiosity and the thrill of solving complex problems. Whether it’s optimizing
+                        workflows, refining digital experiences, or tackling data-driven challenges, I thrive where
+                        strategy meets execution.<br><br>
+                        Technology isn’t just something I follow—it’s something I integrate, adapt, and leverage to
+                        drive meaningful change. From streamlining operations to enhancing customer journeys, I take a
+                        hands-on approach to creating real impact.<br><br>
+                        I believe that learning never stops. Staying ahead of industry trends, exploring emerging tools,
+                        and refining my expertise are all part of the process. Every challenge is an opportunity to push
+                        limits, rethink the status quo, and build something better.<br><br>
+                        If that sounds like the mindset you’re looking for, let’s connect. My contact info is just
+                        below—looking forward to the conversation!
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Certifications and Technostack -->
-    <div class="cards">
-        <div class="certifications">
-            <div class="certificationsCard cardWhite">
-                <img src="../images/CIQ.png" alt="Innovation Management Certification">
-                <h3>Innovation Management Certification</h4>
-                <p>This certification was obtained from the CIQ (Conseil de l'innovation du Québec), and
-                    attests that I'm equiped with the correct tools to accompany businesses in their
-                    financing and innovation endeavors.
-                </p>
+        <!-- Certifications and Technostack -->
+        <div class="cards">
+            <div class="certifications">
+                <div class="certificationsCard cardWhite">
+                    <img src="../images/CIQ.png" alt="Innovation Management Certification">
+                    <h3>Innovation Management Certification</h4>
+                        <p>This certification was obtained from the CIQ (Conseil de l'innovation du Québec), and
+                            attests that I'm equiped with the correct tools to accompany businesses in their
+                            financing and innovation endeavors.
+                        </p>
+                </div>
+                <div class="certificationsCard cardWhite">
+                    <img src="../images/TELUQ.png" alt="Software Development Accelerated Program">
+                    <h3>Software Development Program</h4>
+                        <p>This online program teaches key software development skills, including programming in
+                            languages like Java, C++ and Python, as well as algorithms and software engineering tools.
+                        </p>
+                </div>
+                <div class="certificationsCard cardWhite">
+                    <img src="../images/GoogleAnalytics.png" alt="Google Analytics 4 Certification">
+                    <h3>Google Analytics 4 Certification <br><br></h4>
+                        <p>This certification demonstrates expertise in configuring properties, tracking events, and
+                            analyzing
+                            user data across platforms with a focus on custom reports and marketing strategy
+                            optimization.
+                        </p>
+                </div>
+                <div class="certificationsCard cardWhite">
+                    <img src="../images/Power-platform.png" alt="Power Platform PL-900 & PL-200 Certifications">
+                    <h3>Power Platform <br>PL-900 & PL-200 Certifications</h4>
+                        <p>These certifications prove expertise in Microsoft Power Platform, covering various
+                            technicalities.
+                            It focuses on building apps, automating workflows, and analyzing data to drive business
+                            efficiency and decision-making.
+                        </p>
+                </div>
+                <div class="certificationsCard cardWhite">
+                    <img class="theme-image" data-light="../images/IIT.png" data-dark="../images/dm-IIT.png"
+                        src="../images/IIT.png" alt="Bachelor of Information Technology">
+                    <h3>Bachelor of Information Technology</h4>
+                        <p>The Bachelor of Information Technology from IIT provides a comprehensive foundation in IT,
+                            covering topics like software development, data management, leadership and networking.
+                            (Incomplete)
+                        </p>
+                </div>
+                <div class="certificationsCard cardWhite">
+                    <img src="../images/google-project-management-certificate.2.png"
+                        alt="Agile Project Management Certification">
+                    <h3>Agile Project Management Certification</h4>
+                        <p>This certification demonstrates experience in project planning, risk management, and team
+                            coordination. It ensures
+                            efficient project management practices, communication with stakeholders, proper documents
+                            preparation.
+                        </p>
+                </div>
+                <div class="certificationsCard cardWhite">
+                    <img src="../images/Hubspot.png" alt="Hubspot Inbound & SEO Certifications">
+                    <h3>Hubspot Inbound & SEO Certifications</h4>
+                        <p>These certifications demonstrate expertise in inbound marketing and SEO strategies, covering
+                            areas such as
+                            content creation, lead generation, website optimization, and traffic conversion.
+                        </p>
+                </div>
+                <div class="certificationsCard cardWhite">
+                    <img src="../images/skill-up.png" alt="CAPM & CPM Attestations">
+                    <h3>CAPM & CPM Attestations <br><br></h4>
+                        <p>These attestations demonstrate expertise in project management, focusing on essential
+                            principles, processes,
+                            and techniques. They ensure efficient, timely, within-scope, within-budget project
+                            management delivery.
+                        </p>
+                </div>
             </div>
-            <div class="certificationsCard cardWhite">
-                <img src="../images/TELUQ.png" alt="Software Development Accelerated Program">
-                <h3>Software Development Program</h4>
-                <p>This online program teaches key software development skills, including programming in 
-                    languages like Java, C++ and Python, as well as algorithms and software engineering tools.
-                </p>
-            </div>
-            <div class="certificationsCard cardWhite">
-                <img src="../images/GoogleAnalytics.png" alt="Google Analytics 4 Certification">
-                <h3>Google Analytics 4 Certification <br><br></h4>
-                <p>This certification demonstrates expertise in configuring properties, tracking events, and analyzing 
-                    user data across platforms with a focus on custom reports and marketing strategy optimization.
-                </p>
-            </div>
-            <div class="certificationsCard cardWhite">
-                <img src="../images/Power-platform.png" alt="Power Platform PL-900 & PL-200 Certifications">
-                <h3>Power Platform <br>PL-900 & PL-200 Certifications</h4>
-                <p>These certifications prove expertise in Microsoft Power Platform, covering various technicalities. 
-                    It focuses on building apps, automating workflows, and analyzing data to drive business efficiency and decision-making.
-                </p>
-            </div>
-            <div class="certificationsCard cardWhite">
-                <img class="theme-image" data-light="../images/IIT.png" data-dark="../images/dm-IIT.png"
-                    src="../images/IIT.png" alt="Bachelor of Information Technology">
-                <h3>Bachelor of Information Technology</h4>
-                <p>The Bachelor of Information Technology from IIT provides a comprehensive foundation in IT, 
-                    covering topics like software development, data management, leadership and networking. (Incomplete)
-                </p>
-            </div>
-            <div class="certificationsCard cardWhite">
-                <img src="../images/google-project-management-certificate.2.png" alt="Agile Project Management Certification">
-                <h3>Agile Project Management Certification</h4>
-                <p>This certification demonstrates experience in project planning, risk management, and team coordination. It ensures
-                    efficient project management practices, communication with stakeholders, proper documents preparation.
-                </p>
-            </div>
-            <div class="certificationsCard cardWhite">
-                <img src="../images/Hubspot.png" alt="Hubspot Inbound & SEO Certifications">
-                <h3>Hubspot Inbound & SEO Certifications</h4>
-                <p>These certifications demonstrate expertise in inbound marketing and SEO strategies, covering areas such as 
-                    content creation, lead generation, website optimization, and traffic conversion.
-                </p>
-            </div>
-            <div class="certificationsCard cardWhite">
-                <img src="../images/skill-up.png" alt="CAPM & CPM Attestations">
-                <h3>CAPM & CPM Attestations <br><br></h4>
-                <p>These attestations demonstrate expertise in project management, focusing on essential principles, processes, 
-                    and techniques. They ensure efficient, timely, within-scope, within-budget project management delivery.
-                </p>
-            </div>
-        </div>
-        <div class="technostack">
-            <div class="technostackCard cardWhite">
-                <img src="../images/HTML5.png" alt="HTML Logo">
-                <h4>HTML</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/CSS3.png" alt="CSS3 Logo">
-                <h4>CSS (SCSS)</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/JavaScript.png" alt="Javascript Logo">
-                <h4>Javascript</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/Powerfx.png" alt="Power FX Logo">
-                <h4>Power FX</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/Java.png" alt="Java Logo">
-                <h4>Java</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/power-platform-logo.png" alt="Power Platform Logo">
-                <h4>Power Platform</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/Microsoft_Dynamics_365_logo.png" alt="Dynamics 365 Logo">
-                <h4>Dynamics 365</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/Looker-studio.png" alt="Looker Studio Logo">
-                <h4>Looker Studio</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/monday-dot-com.avif" alt="Monday.com Logo">
-                <h4>Monday</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/wordpress.png" alt="Wordpress Logo">
-                <h4>Wordpress</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/magento.png" alt="Magento Logo">
-                <h4>Magento</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/bigquery.png" alt="BigQuery Logo">
-                <h4>BigQuery</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/azure.png" alt="Azure Logo">
-                <h4>Azure</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/asana.png" alt="Asana Logo">
-                <h4>Asana</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/figma.png" alt="Figma Logo">
-                <h4>Figma</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/python.png" alt="Python Logo">
-                <h4>Python</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/trello.png" alt="Trello Logo">
-                <h4>Trello</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/ga4.png" alt="Google Analytics 4 Logo">
-                <h4>Google Analytics</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img src="../images/Hubspot.png" alt="Hubspot Logo">
-                <h4>Hubspot</h4>
-            </div>
-            <div class="technostackCard cardWhite">
-                <img class="theme-image" data-light="../images/zendesk.png" data-dark="../images/dm-zendesk.png" src="../images/zendesk.png" alt="Zendesk Logo">
-                <h4>Zendesk</h4>
-            </div>
-        </div>
-    </div>
-    <div class="testimonials cardWhite">
-        <div class="testimonialContainer scroller cardWhite" data-speed="slow">
-            <div class="testimonialScroller scroller__inner">
-                <div class="testimonial">"Sa rigueur et son perfectionnisme sont des qualités toutes indiquées dans son travail. Il est souvent le premier à remarquer des erreurs dans les détails que d’autres ne verraient pas!" <br>- Anne @ Avril </div>
-                <div class="testimonial">"Excellent dans son service, Maverick n’hésite pas à s’assurer de la satisfaction du client, quel que soit le produit ou service concerné. Un employé exemplaire, dévoué, fiable, et faisant preuve d’une attitude toujours positive, et pourtant critique. Je vous recommande chaudement ses services!" <br>- Mélissa @ Buropro</div>
-                <div class="testimonial">"La contribution de Maverick dès son arrivée en poste a été fort remarquée, il est d’ailleurs fort agréable de le côtoyer tous les jours, les clients eux-mêmes nous le communiquent! Il sait réellement faire rayonner la Maison pour en faire un lieu de choix pour les organisations soutenant notre mission." <br>- Marie-Eve @ MDD</div>
-                <div class="testimonial">"Doté de ta belle plume tu as déjà pris de l'avance sur nous tous, et tu me donnes grand espoir pour la prochaine génération de leaders. Te côtoyer est un réel plaisir." <br>- Samy @ SamyRabbat.com</div>
-                <div class="testimonial">"Maverick Lussier est un professionnel remarquable, animé par une ambition sans limites et une soif insatiable d'apprendre. Son engagement envers son perfectionnement constant est impressionnant; il ne se contente jamais de l'acquis, cherchant toujours à repousser ses propres limites. Cette détermination à évoluer se reflète dans son travail, où il excelle à transformer chaque expérience en une opportunité d'amélioration. Maverick ne cesse de se développer, et sa capacité à absorber de nouvelles connaissances et à les appliquer de manière innovante fait de lui un atout précieux pour toute équipe. Travailler à ses côtés est une expérience enrichissante." <br>- Sarah @ MDD</div>
-                <div class="testimonial">"N'importe quel employeur serait chanceux de l'avoir. Je ne doute pas qu’il réussira peu importe ce qu’il entreprend, Maverick possède de belles et rares qualités. En tout cas, je suis contente de l'avoir eu comme collègue, et j’espère continuer à croiser son chemin!" <br>- Marie-Ève @ MDD</div>
-                <div class="testimonial">"Apte à apprendre en continu, il sait communiquer rapidement les problématiques et a d’ailleurs su en adresser plusieurs lors d’une période critique chez Avril." <br>- Jonathan @ Avril</div>
-                <div class="testimonial">"Merci beaucoup Maverick! Tout le groupe a aimé son expérience et l'environnement chaleureux que tu as créé." <br>- Hanya @ Cliente</div>
-                <div class="testimonial">"Je te remercie pour l’excellent service à la clientèle qui m’a été offert lors des différents échanges téléphoniques effectués avec toi." <br>- Patricia @ Cliente</div>
-                <div class="testimonial">"L’événement s’est super bien déroulé et je crois que les participant.e.s ont bien aimé ! 😊 Merci encore pour ton précieux soutien, c’était un réel plaisir de collaborer avec toi." <br>- William @ Client</div>
-                <div class="testimonial">"Merci à Maverick pour l'attention portée à nos besoins et demandes, son écoute, sa disponibilité et flexibilité. L'événement s'est bien déroulé, merci!" <br>- Maryse @ Cliente</div>
-                <div class="testimonial">"Notre événement s'est déroulé à merveille, merci pour ta proactivité et ton superbe accueil!" <br>- Antsa @ Cliente</div>
-                <div class="testimonial">"Ton accueil est toujours aussi impeccable. Le résultat a été impeccable et rien n'a retroussé!" <br>- Bruno @ Client</div>
-                <div class="testimonial">"Merci encore pour la qualité de nos échanges, ta gentillesse et ta disponibilité. Cela a été un plaisir de collaborer ensemble." <br>- Julie @ Cliente</div>
-                <div class="testimonial">"J'ai lu plusieurs de tes articles, et tu es franchement talentueux Maverick. Tu devrais devenir animateur de radio!" <br>- Roger @ Collaborateur</div>
+            <div class="technostack">
+                <div class="technostackCard cardWhite">
+                    <img src="../images/HTML5.png" alt="HTML Logo">
+                    <h4>HTML</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/CSS3.png" alt="CSS3 Logo">
+                    <h4>CSS (SCSS)</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/JavaScript.png" alt="Javascript Logo">
+                    <h4>Javascript</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/Powerfx.png" alt="Power FX Logo">
+                    <h4>Power FX</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/Java.png" alt="Java Logo">
+                    <h4>Java</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/power-platform-logo.png" alt="Power Platform Logo">
+                    <h4>Power Platform</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/Microsoft_Dynamics_365_logo.png" alt="Dynamics 365 Logo">
+                    <h4>Dynamics 365</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/Looker-studio.png" alt="Looker Studio Logo">
+                    <h4>Looker Studio</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/monday-dot-com.avif" alt="Monday.com Logo">
+                    <h4>Monday</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/wordpress.png" alt="Wordpress Logo">
+                    <h4>Wordpress</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/magento.png" alt="Magento Logo">
+                    <h4>Magento</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/bigquery.png" alt="BigQuery Logo">
+                    <h4>BigQuery</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/azure.png" alt="Azure Logo">
+                    <h4>Azure</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/asana.png" alt="Asana Logo">
+                    <h4>Asana</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/figma.png" alt="Figma Logo">
+                    <h4>Figma</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/python.png" alt="Python Logo">
+                    <h4>Python</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/trello.png" alt="Trello Logo">
+                    <h4>Trello</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/ga4.png" alt="Google Analytics 4 Logo">
+                    <h4>Google Analytics</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img src="../images/Hubspot.png" alt="Hubspot Logo">
+                    <h4>Hubspot</h4>
+                </div>
+                <div class="technostackCard cardWhite">
+                    <img class="theme-image" data-light="../images/zendesk.png" data-dark="../images/dm-zendesk.png"
+                        src="../images/zendesk.png" alt="Zendesk Logo">
+                    <h4>Zendesk</h4>
+                </div>
             </div>
         </div>
-    </div>
+        <div class="testimonials cardWhite">
+            <div class="testimonialContainer scroller cardWhite" data-speed="slow">
+                <div class="testimonialScroller scroller__inner">
+                    <div class="testimonial">"Sa rigueur et son perfectionnisme sont des qualités toutes indiquées dans
+                        son travail. Il est souvent le premier à remarquer des erreurs dans les détails que d’autres ne
+                        verraient pas!" <br>- Anne @ Avril </div>
+                    <div class="testimonial">"Excellent dans son service, Maverick n’hésite pas à s’assurer de la
+                        satisfaction du client, quel que soit le produit ou service concerné. Un employé exemplaire,
+                        dévoué, fiable, et faisant preuve d’une attitude toujours positive, et pourtant critique. Je
+                        vous recommande chaudement ses services!" <br>- Mélissa @ Buropro</div>
+                    <div class="testimonial">"La contribution de Maverick dès son arrivée en poste a été fort remarquée,
+                        il est d’ailleurs fort agréable de le côtoyer tous les jours, les clients eux-mêmes nous le
+                        communiquent! Il sait réellement faire rayonner la Maison pour en faire un lieu de choix pour
+                        les organisations soutenant notre mission." <br>- Marie-Eve @ MDD</div>
+                    <div class="testimonial">"Doté de ta belle plume tu as déjà pris de l'avance sur nous tous, et tu me
+                        donnes grand espoir pour la prochaine génération de leaders. Te côtoyer est un réel plaisir."
+                        <br>- Samy @ SamyRabbat.com</div>
+                    <div class="testimonial">"Maverick Lussier est un professionnel remarquable, animé par une ambition
+                        sans limites et une soif insatiable d'apprendre. Son engagement envers son perfectionnement
+                        constant est impressionnant; il ne se contente jamais de l'acquis, cherchant toujours à
+                        repousser ses propres limites. Cette détermination à évoluer se reflète dans son travail, où il
+                        excelle à transformer chaque expérience en une opportunité d'amélioration. Maverick ne cesse de
+                        se développer, et sa capacité à absorber de nouvelles connaissances et à les appliquer de
+                        manière innovante fait de lui un atout précieux pour toute équipe. Travailler à ses côtés est
+                        une expérience enrichissante." <br>- Sarah @ MDD</div>
+                    <div class="testimonial">"N'importe quel employeur serait chanceux de l'avoir. Je ne doute pas qu’il
+                        réussira peu importe ce qu’il entreprend, Maverick possède de belles et rares qualités. En tout
+                        cas, je suis contente de l'avoir eu comme collègue, et j’espère continuer à croiser son chemin!"
+                        <br>- Marie-Ève @ MDD</div>
+                    <div class="testimonial">"Apte à apprendre en continu, il sait communiquer rapidement les
+                        problématiques et a d’ailleurs su en adresser plusieurs lors d’une période critique chez Avril."
+                        <br>- Jonathan @ Avril</div>
+                    <div class="testimonial">"Merci beaucoup Maverick! Tout le groupe a aimé son expérience et
+                        l'environnement chaleureux que tu as créé." <br>- Hanya @ Cliente</div>
+                    <div class="testimonial">"Je te remercie pour l’excellent service à la clientèle qui m’a été offert
+                        lors des différents échanges téléphoniques effectués avec toi." <br>- Patricia @ Cliente</div>
+                    <div class="testimonial">"L’événement s’est super bien déroulé et je crois que les participant.e.s
+                        ont bien aimé ! 😊 Merci encore pour ton précieux soutien, c’était un réel plaisir de collaborer
+                        avec toi." <br>- William @ Client</div>
+                    <div class="testimonial">"Merci à Maverick pour l'attention portée à nos besoins et demandes, son
+                        écoute, sa disponibilité et flexibilité. L'événement s'est bien déroulé, merci!" <br>- Maryse @
+                        Cliente</div>
+                    <div class="testimonial">"Notre événement s'est déroulé à merveille, merci pour ta proactivité et
+                        ton superbe accueil!" <br>- Antsa @ Cliente</div>
+                    <div class="testimonial">"Ton accueil est toujours aussi impeccable. Le résultat a été impeccable et
+                        rien n'a retroussé!" <br>- Bruno @ Client</div>
+                    <div class="testimonial">"Merci encore pour la qualité de nos échanges, ta gentillesse et ta
+                        disponibilité. Cela a été un plaisir de collaborer ensemble." <br>- Julie @ Cliente</div>
+                    <div class="testimonial">"J'ai lu plusieurs de tes articles, et tu es franchement talentueux
+                        Maverick. Tu devrais devenir animateur de radio!" <br>- Roger @ Collaborateur</div>
+                </div>
+            </div>
+        </div>
     </div>
     <footer id="footer">
         <div class="contact">

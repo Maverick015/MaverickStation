@@ -15,6 +15,7 @@
 </head>
 
 <body class="light-grey">
+    <script src="projects.js"></script>
 
     <!-- Main Header -->
 
@@ -42,12 +43,12 @@
     </header>
 
     <!-- Sidebar/menu -->
-
+    <div class="content-wrapper">
     <nav class="sidebar collapse white" style="z-index:3;width:300px;" id="mySidebar">
         <div class="sidebar-container">
             <div class="bar-block">
                 <h3> Latest Updates</h4>
-                <p>Progress is constant, and so is the development of this Website!</p>
+                <p id="sidebarDesc">Progress is constant, and so is the development of this Website!</p>
                 <ul id="commitHistory">
                     <!-- Commits show up here <li> items -->
                 </ul>
@@ -68,7 +69,7 @@
 
         <!-- Header -->
         <header id="portfolioHeader">
-            <span class="button hide-large xxlarge hover-text-grey" onclick="ms_open()"><i
+            <span class="button hide-large hover-text-grey" onclick="ms_open()"><i
                     class="fa fa-bars"></i></span>
             <div class="container">
                 <h1 class="portfolioTitle"><b>My Portfolio</b></h1>
@@ -173,12 +174,13 @@
                     <img src="../images/wine.png" alt="Wines & Spirits Articles">
                     <h3>Wines & Spirits Articles</h3>
                     <p>Need some wines & spirits recommendations? Well, I actually wrote a few dozen articles for a
-                        popular media! Check it out, and let me know what you chose to drink!</p>
+                        popular media! Check it out, and let me know what you end up reading!</p>
                     <button class="discover"><a href="https://www.samyrabbat.com/chroniqueurs/maverick-lussier/" target="_blank">Discover</a></button>
                 </div>
             </div>
         </div>
-
+    </div>
+</div>
     <footer id="footer">
         <div class="contact">
             <ul class="contactList">
@@ -194,11 +196,9 @@
             </div>
             <div class="copyright">Copyright @ MaverickStation.ca <span id="spanYear"></span></div>
         </div>
-
     </footer>
     <script>document.getElementById('spanYear').textContent = new Date().getFullYear();</script>
     <script src="../darkmode.js" defer></script>
-    <script src="projects.js" defer></script>
 </body>
 
 </html>
