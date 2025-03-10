@@ -107,7 +107,6 @@ nav{display:flex; background-color:inherit; }
 }
 
 /* Sidebar Animations */
-
 .animate-opacity{animation:opac 0.8s}@keyframes opac{from{opacity:0} to{opacity:1}}
 .animate-left{position:relative;animation:animateleft 0.4s}@keyframes animateleft{from{left:-300px;opacity:0} to{left:0;opacity:1}}
 .animate-left-reverse{position:relative;animation:animateleftreverse 0.4s}@keyframes animateleftreverse{from{left:0px;opacity:1} to{left:-300px;opacity:0}}
@@ -119,8 +118,7 @@ nav{display:flex; background-color:inherit; }
 .filterButton:hover{background-color:#f5f5f5;box-shadow:0 3px 6px 0 rgba(0,0,0,0.1)}
 .container{padding:0.01em 16px;text-align: center;}
 
-        /* Cards */
-
+/* Cards */
 #cardContainer h2, #cardContainer{margin: 40px 0;text-align: center;}
 .cards {display: flex; margin-top: 20px;justify-content: center;flex-wrap: wrap;gap: 25px;}
 .cardWhite {display:flex;flex-direction:column;max-width: 250px;background: var(--white);text-align: center;align-items:center;border-radius: 5px;padding: 25px;}
@@ -134,12 +132,12 @@ nav{display:flex; background-color:inherit; }
 
 .cardFilter{display: none;}
 
-        /* Buttons */
-
+/* Buttons */
 .discover a{text-decoration: none;color: var(--white);font-size: 1.25rem;}
 .discover {width:150px;background-color: var(--footer-bg);border: none;border-radius: 5px;padding: 5px 15px;}
 .discover:hover{background-color: var(--discover-hover)}
-        /* Filtering Cards */
+    
+/* Filtering Cards */
 
 .show{display: flex;}
 .all-selector{width:75px!important}
@@ -156,7 +154,6 @@ nav{display:flex; background-color:inherit; }
 .cards{margin-right:50px}.cards{margin-left:3px}.portfolioTitle{margin-right:50px}#buttonSection{margin-right:50px}.contact{margin-right: 50px;}}
 
 /* Footer */
-
 #footer {margin-top: auto;transition:margin-left .4s;background: var(--footer-bg);padding: 40px 40px 10px 40px;text-align: center;color: var(--white);}
 
 @media (min-width:993px) {

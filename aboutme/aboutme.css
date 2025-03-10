@@ -1,13 +1,6 @@
 /* Font */
 * {font-family: Georgia, 'Times New Roman', Times, serif;line-height: 1.5;}  
 
-.small { font-size: 0.875rem; } /* ≈ 14px */
-.large { font-size: 1.125rem; } /* ≈ 18px */
-.xlarge { font-size: 1.5rem; } /* ≈ 24px */
-.xxlarge { font-size: 2.25rem; } /* ≈ 36px */
-.xxxlarge { font-size: 3rem; } /* ≈ 48px */
-.jumbo { font-size: 4rem; } /* ≈ 64px */
-
 h1 { font-size: clamp(1.75rem, 2.5vw, 2.25rem); margin: 0; } /* ≈ 28px to 36px */
 h2 { font-size: clamp(1.5rem, 2vw, 2rem); margin: 0; } /* ≈ 24px to 32px */
 h3 { font-size: clamp(1.25rem, 1.75vw, 1.5rem); margin: 10px 0 0; } /* ≈ 20px to 24px */
@@ -67,10 +60,9 @@ nav{display:flex; background-color:inherit; }
 
 @media (min-width:993px) {
     .aboutMeContainer {display: flex;justify-content: center; align-items: center;gap: 30px;margin: 15px 15px 25px 15px}}
-    
+
 @media (max-width:992.99px) {
 .aboutMeContainer {display: flex;flex-wrap: wrap;display: flex;justify-content: center; align-items: center;gap: 30px;margin: 15px 15px 25px 15px}}
-
 
 /* Slider */ 
 .slider-container{position: relative;max-width: 400px;overflow: hidden;}
@@ -94,7 +86,6 @@ color: var(--white);padding: 10px;border: none;cursor: pointer;z-index: 10;}
 .dot{display: inline-block;height: 15px;width: 15px;margin: 0 5px;background-color: #d6b8b5;
 border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 
-
 /* Description */
 .descriptionContainer{border-radius: 10px;height: 400px; max-width: 100vh;margin-bottom: 35px;}
 .personalityContainer h2{padding:10px 0px;margin-bottom:0px;width: 80%;}
@@ -106,7 +97,6 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 .personalityContainer p::-webkit-scrollbar-track {opacity: 0;}
 .personalityContainer p::-webkit-scrollbar-thumb {background: #dddddd;border-radius: 10px;  }
 .personalityContainer p::-webkit-scrollbar-thumb:hover {background: #555;}
-
 
 /* Certifications and Technostack cards */
 .cards{margin: 25px 15px 50px 15px;}
@@ -124,6 +114,7 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 .technostack{margin-top:50px;display: flex;gap: 25px;flex-wrap: wrap;justify-content: center}
 .technostackCard {width: 125px;text-align: center;border-radius: 5px;padding: 15px;}
 .technostackCard img {max-width: 125px;height: 50px}
+
 @media (max-width:370px) {
     .technostackCard{width: 100px;}
 }
@@ -132,7 +123,7 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 .testimonials{margin: 50px 15px 25px 15px;text-align: center;border-radius: 5px;height: auto;border-radius: 10px;}
 .testimonialContainer {border-radius: 10px;overflow: hidden;white-space: wrap;width: 100%;padding: 20px 0; ;}
 .testimonialScroller {border-radius: 10px;display: flex;}
-.testimonial {overflow-y:scroll;scrollbar-color: var(--white)!important;min-width: 300px;padding: 10px 20px;height:22vh;border:1px solid var(--black);border-radius: 10px;font-style: italic;}
+.testimonial {background-color:#f4f4f4;overflow-y:scroll;scrollbar-color: var(--white)!important;min-width: 300px;padding: 10px 20px;height:22vh;border:1px solid var(--black);border-radius: 10px;font-style: italic;}
 
 .testimonial::-webkit-scrollbar{width: 8px;}
 .testimonial::-webkit-scrollbar-track {opacity: 0;}
@@ -150,21 +141,12 @@ border-radius: 50%;cursor: pointer;transition: background-color 0.3s;}
 
 @keyframes scroll {to {transform: translate(calc(-375% - 7.5rem));}}
 @media (max-width: 770px) { /* Target small laptops & mobile devices */
-        .scroller__inner {
-        animation: none; 
-        max-width: 100%; 
-        flex-wrap: nowrap; 
-        overflow-x:scroll; 
-        padding: 10px 1rem 10px 1rem;
-        -webkit-overflow-scrolling: touch; 
-    }
+        .scroller__inner {animation: none;max-width: 100%;flex-wrap: nowrap;
+        overflow-x:scroll;padding: 10px 1rem 10px 1rem;-webkit-overflow-scrolling: touch; }
 }
 @media (max-width: 400px) { /* Target mobile devices */
-    .testimonial{
-        min-width: 200px;
-    }
+    .testimonial{min-width: 200px;}
 }
-
 
 /* Footer */
 #footer {margin-top: auto;background: var(--footer-bg);padding: 40px 40px 10px 40px;text-align: center;color: var(--white);}
